@@ -141,3 +141,17 @@ int numArray[4]{5, 9, 12, 7}; // 4 * 4 = 16 bytes of memory
 ```
 
 > Note: There are no built in array functions such as size() or at() as arrays are not objects.
+
+## Example Program
+
+A program is provided to demonstrate this material.
+
+### Usage
+- compile: `make`
+- run: `./variables.exe`
+- cleanup: `make clean`
+
+## Sources and Further Material
+
+- [CPP Reference](https://en.cppreference.com/)
+- [CPP](https://www.cplusplus.com/doc/)

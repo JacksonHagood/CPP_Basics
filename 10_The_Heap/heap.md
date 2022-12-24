@@ -39,7 +39,7 @@ An example program is provided to demonstrate some of these concepts
 
 ### Usage
 - compile: `make`
-- run: `./heap`
+- run: `./heap.exe`
 - cleanup: `make clean`
 
 ## References
