@@ -19,6 +19,10 @@ int main() {
 
         cout << "Num 2 (initialized): " << num2 << '\n';
         cout << "Character 2 (initialized): " << char2 << '\n';
+
+        // const variables cannot be changed after initialized
+        const int num3 = 0;
+        // num3 = 5; // would cause error
     }
 
     promptInput();

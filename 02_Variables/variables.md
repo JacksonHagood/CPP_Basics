@@ -6,7 +6,7 @@
 
 ### Declaration
 
-To declare a variable in C++, two things are needed: a type and a name. For example, the below code **declares** two variables. Data types in C++ have a size associated with them (in bytes).
+To declare a variable in C++, two things are needed: a type and a name (**identifier**). For example, the below code **declares** two variables. Data types in C++ have a size associated with them (in bytes).
 
 ```C++
 int num1; // integer variable
@@ -20,6 +20,14 @@ When declaring a variable in C++ without giving an initial value (**initializing
 ```C++
 int num2 = 0;
 char char2 = 'A'; // single quotes denote a char
+```
+
+### Constants
+
+In addition to having a name and a type, variables can be constant in C++. As expected, a constant variable is one that cannot be altered after it is initialized. To make a variable constant, use the `const` keyword during declaration.
+
+```C++
+const int num3 = 0;
 ```
 
 ## Types

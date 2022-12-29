@@ -2,7 +2,7 @@
 
 ## Transitioning from Python to C++
 
-> Note: Much of this section assumes a background in Python. Even if without a Python background, much of this information might be helpful.
+> Note: much of this section assumes a background in Python. Even if without a Python background, much of this information might be helpful.
 
 To better transition from Python to C++, it is important to understand the major differences between the languages. Python is an interpreted language, meaning a program called an interpreter converts each line of code to machine code one at a time during execution (runtime). C++, on the other hand, is a compiled language. A program called a compiler (g++) converts an entire C++ program to machine code (compile time) before runtime. What this means in practice is that C++ is lower-level (closer to machine code) and typically faster (often at the expense of memory). There are many differences in syntax between the languages as well.
 
