@@ -37,7 +37,7 @@ int main() {
 }
 ```
 
-The first two lines import `cout`, the standard output stream which works similar to Python's `print()`. The body of the program is given in the `main()` function. Every C++ program needs a `main()` function as that is where execution always begins. Note that `main()` is given a type of `int` as functions in C++ must have a type. the line `cout << "Hello World\n";` sends the `"Hello World"` message to the standard output stream (console). The `"\n"` adds a new line after. Finally, `return 0` is given as `main()` is an `int` function (0 typically indicates successful completion, 1 indicates a problem).
+The first two lines import `cout`, the standard output stream which works similar to Python's `print()`. The body of the program is given in the `main()` function. Every C++ program needs a `main()` function as that is where execution always begins. Note that `main()` is given a type of `int` as functions in C++ must have a type. the line `cout << "Hello World\n";` sends the `"Hello World"` message to the standard output stream (terminal). The `"\n"` adds a new line after. Finally, `return 0` is given as `main()` is an `int` function (0 typically indicates successful completion, 1 indicates a problem).
 
 ## Example Program
 

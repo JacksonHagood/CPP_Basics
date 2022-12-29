@@ -1,5 +1,7 @@
 # C++ Basics
 
+**Currently under construction.**
+
 This repository consists of 14 folders that go through the basics of C++. This is intended for those with basic programming knowledge in Python as they learn C++. Any references are provided but these programs and documents are my own. This content works best as supplementary material alongside a course in C++.
 
 ## Sections
@@ -15,7 +17,7 @@ This repository consists of 14 folders that go through the basics of C++. This i
     - [05: Errors](05_Errors/errors.md)
     - [06: Exceptions](06_Exceptions/exceptions.md)
     - [07: Testing](07_Testing/testing.md)
-- Textual Objects
+- Objects
     - [08: Strings](08_Strings/strings.md)
     - [09: Streams](09_Streams/streams.md)
 - Memory
@@ -27,5 +29,3 @@ This repository consists of 14 folders that go through the basics of C++. This i
     - [14: Rule of Three](14_Rule_of_Three/rule_of_three.md)
 - Abstract Data Types
     - [15: Linked Lists](15_Linked_Lists/linked_lists.md)
-
-Currently under construction
