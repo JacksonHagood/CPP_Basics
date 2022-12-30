@@ -29,3 +29,6 @@ This repository consists of 14 folders that go through the basics of C++. This i
     - [14: Rule of Three](14_Rule_of_Three/rule_of_three.md)
 - Abstract Data Types
     - [15: Linked Lists](15_Linked_Lists/linked_lists.md)
+
+TODO: appendix: basic linux commands
+TODO: appendix: concepts from Python

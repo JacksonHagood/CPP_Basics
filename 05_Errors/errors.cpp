@@ -1,6 +1,8 @@
 # include "../Appendix/helper.h"
 
 int main() {
+    cout << 1 / 0;
+
     outputHeading("Syntax Errors");
 
     {

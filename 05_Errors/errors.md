@@ -15,6 +15,12 @@ int a = 1 // forgot semicolon
 int b = 2;
 ```
 
+```
+main.cpp:5:5: error: expected ‘,’ or ‘;’ before ‘int’
+    5 |     int b = 2;
+      |
+```
+
 ### Linker Errors
 
 **Linker errors** occur when the compiler looks for the definition of a function or header file but cannot find it. A very common example of this is when the programmer forgets to define a main function (as every C++ program starts at the main function). Another common example is attempting to use `cout` without including `iostream`.
@@ -25,6 +31,12 @@ using std::cout; // iostream never included
 int main() {
     cout << "A";
 }
+```
+
+```
+main.cpp:1:12: error: ‘std::cout’ has not been declared
+    1 | using std::cout; // iostream never included
+      |
 ```
 
 ### Warnings
@@ -40,17 +52,33 @@ int foo() {
 }
 ```
 
+```
+main.cpp:8:1: warning: control reaches end of non-void function [-Wreturn-type]
+    8 | }
+      |
+```
+
 ## Runtime Errors
 
-**Runtime errors** are errors that occur during the execution of a C++ program. These errors did not prevent compilation, but stop the program from continuing to execute because of some software error. These errors are typically harder to debug than compile-time errors. One common example of a runtime error is a **segmentation fault**. A segementation fault occurs when a C++ program attempts to access memory that is not available to it (like accessing an array beyond its bounds). Another example of a runtime error is divide by zero.
+**Runtime errors** are errors that occur during the execution of a C++ program. These errors did not prevent compilation, but stop the program from continuing to execute because of some software error. These errors are typically harder to debug than compile-time errors. One common example of a runtime error is a **segmentation fault**. A segementation fault occurs when a C++ program attempts to access memory that is not available to it (like accessing an array beyond its bounds).
 
 ```C++
 int nums[3] = {0, 1, 2};
 cout << nums[10]; // can cause segmentaiton fault at runtime
 ```
 
+```
+main.cpp:5:20: runtime error: index 10 out of bounds for type 'int [3]'
+```
+
+Another example of a runtime error is divide by zero (though warnings can help spot this).
+
 ```C++
 cout << 1 / 0; // divide by zero error at runtime
+```
+
+```
+main.cpp:4:15: runtime error: division by zero
 ```
 
 ## Logical Errors
