@@ -32,3 +32,4 @@ This repository consists of 14 folders that go through the basics of C++. This i
 
 TODO: appendix: basic linux commands
 TODO: appendix: concepts from Python
+TODO: Variables: type casting

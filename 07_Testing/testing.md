@@ -17,7 +17,7 @@ An crucial part of software engineering is the concept ot testing. Being able to
 | `1`        | `0`        | exception      |
 | `-1`       | `0`        | exception      |
 
-With the above test cases in mind, the `division` could then be written.
+With the above test cases in mind, the `division()` function could then be written.
 
 ## Types of Testing
 

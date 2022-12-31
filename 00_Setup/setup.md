@@ -1,5 +1,9 @@
 # Setup
 
+## What is C++?
+
+C++ is a popular programming language, typically used for application development. C++ is built on top of the C programming language, with its largest addition being object-oriented programming. C++ is a high-level, compiled language that retains some lower-level functionality (such as memory management). C++ is faster than many other high-level languages and is supported on many platforms.
+
 ## Transitioning from Python to C++
 
 > Note: much of this section assumes a background in Python. Even if without a Python background, much of this information might be helpful.
