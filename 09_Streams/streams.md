@@ -88,3 +88,17 @@ ss >> word1 >> word2; // reads in words from stringstream one at a time
 ```C++
 ofstream output("file.txt"); // opens output file stream with file.txt
 ```
+
+## Example Program
+
+A program is provided to demonstrate this material.
+
+### Usage
+- compile: `make`
+- run: `./streams.exe`
+- cleanup: `make clean`
+
+## Sources and Further Material
+
+- [CPP Reference](https://en.cppreference.com/)
+- [CPP](https://www.cplusplus.com/doc/)
