@@ -110,4 +110,6 @@ int main() {
     }
 
     promptInput();
+
+    return 0;
 }

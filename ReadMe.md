@@ -34,3 +34,4 @@ TODO: appendix: basic linux commands
 TODO: appendix: concepts from Python
 TODO: Variables: type conversions
 TODO: appendix: string colors
+TODO: Variables: NULL
