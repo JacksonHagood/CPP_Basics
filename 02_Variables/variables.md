@@ -150,6 +150,16 @@ int numArray[4]{5, 9, 12, 7}; // 4 * 4 = 16 bytes of memory
 
 > Note: There are no built in array functions such as size() or at() as arrays are not objects.
 
+## Type Conversion
+
+> Note: type conversions are not covered in detail here
+
+While C++ is a strongly typed language, it does support some type conversions. For example, an integer can be easily cast to a char to get its ASCII representation. C++ does not have methods for converting between all types, however (like `bool*` to `char`).
+
+```C++
+(char) num; // int cast as char
+```
+
 ## Example Program
 
 A program is provided to demonstrate this material.

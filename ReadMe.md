@@ -1,8 +1,6 @@
 # C++ Basics
 
-**Currently under construction.**
-
-This repository consists of 14 folders that go through the basics of C++. This is intended for those with basic programming knowledge in Python as they learn C++. Any references are provided but these programs and documents are my own. This content works best as supplementary material alongside a course in C++.
+This repository consists of 14 folders that go through the basics of C++. This is intended for those with basic programming knowledge in Python as they learn C++. Any references are provided but these programs and documents are my own. This content works best as supplementary material alongside a course in C++. Consult the Appendix for review and futher material.
 
 ## Sections
 
@@ -30,8 +28,22 @@ This repository consists of 14 folders that go through the basics of C++. This i
 - Abstract Data Types
     - [15: Linked Lists](15_Linked_Lists/linked_lists.md)
 
-TODO: appendix: basic linux commands
-TODO: appendix: concepts from Python
-TODO: Variables: type conversions
-TODO: appendix: string colors
-TODO: Variables: NULL
+## Appendix
+
+- [Python Review](Appendix/python.md)
+- [Linux](Appendix/linux.md)
+- [Makefiles](Appendix/make.md)
+- [Git](Appendix/git.md)
+- [C](Appendix/c.md)
+
+# **Currently under construction**
+
+- TODO: Variables: NULL
+- TODO: Section 12: Dynamic Arrays
+- TODO: Section 13: Classes
+- TODO: Section 14: Rule of Three
+- TODO: Section 15: Linked Lists
+- TODO: Appendix: Python Review
+- TODO: Appendix: Makefiles
+- TODO: Appendix: Git
+- TODO: Appendix: C

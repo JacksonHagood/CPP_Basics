@@ -1,45 +1,61 @@
-# include <iostream>
-using std::cout, std::cin;
-
-// program to demonstrate the stack and heap
+# include "../Appendix/helper.h"
 
 int main() {
-    system("clear"); cout << "\033[36mThe Heap\033[0m\n\n";
+    outputHeading("The Stack");
 
-    // integer created on the stack
-    // stack is memory automatically managed by the compiler
-    int stackInteger = 1;
+    {
+        // stackInteger does not exist here
 
-    cout << "Integer value: \033[33m" << stackInteger << "\033[0m\n";
-    cout << "Integer address: \033[35m" << &stackInteger << "\033[0m\n";
+        {
+            // integer created on the stack (automatically managed by the compiler)
+            int stackInteger = 1;
 
-    // pointer to an integer created on the heap
-    // heap is memory managed by the programmer (use new and delete)
-    // all allocated memory on the heap must be traced back to a pointer on the stack (otherwise, memory leak)
-    int* heapPointer = new int{3};
+            cout << "Integer value: " << stackInteger << '\n';
+            cout << "Integer address: " << &stackInteger << '\n';
 
-    // "heapPointer" is a pointer to an integer, not the integer itself
-    cout << "\nPointer value: \033[35m" << heapPointer << "\033[0m\n";
-    cout << "Pointer dereferenced: \033[33m" << *heapPointer << "\033[0m\n";
+            // stackInteger exists here
 
-    // because pointers are themselves variables, they have their own memory location (the pointer variable is on the stack)
-    cout << "Pointer address: \033[35m" << &heapPointer << "\033[0m\n";
+            // outputs diagram of memory 
+            cout << "\n+-------------Stack Diagram-------------+\n|    address     | value |  identifier  |\n+----------------+-------+--------------+\n| " << &stackInteger << " |   " << stackInteger << "   | stackInteger |\n|       ...      |  ...  |     ...      |\n+----------------+-------+--------------+\n";
+        }
 
-    // (outputs diagram of the stack & heap)
-    cout << "\n+-----------------------\033[36mSTACK\033[0m----------------------+        +--------------\033[36mHEAP\033[0m---------------+\n| addr           | value          | variable       |        | addr           | value          |\n+----------------+----------------+----------------+        +----------------+----------------+\n|                        \033[36m...\033[0m                       |        |               \033[36m...\033[0m               |\n+----------------+----------------+----------------+        +----------------+----------------+\n| \033[35m" << &stackInteger << "\033[0m | \033[33m" << stackInteger << "\033[0m              | stackInteger   |   +--->| \033[35m" << heapPointer << "\033[0m | \033[33m" << *heapPointer << "\033[0m              |\n+----------------+----------------+----------------+   |    +----------------+----------------+\n| \033[35m" << &heapPointer << "\033[0m | \033[35m" << heapPointer << "\033[0m | heapPointer    |---+    |               \033[36m...\033[0m               |\n+----------------+----------------+----------------+        +----------------+----------------+\n|                        \033[36m...\033[0m                       | \n+----------------+----------------+----------------+ \n";
-    
-    // must deallocate memory on the heap before access is lost to it
-    // variables on the stack are automatically deleted once out of scope (such as the pointer)
-    delete heapPointer;
+        // stackInteger does not exist here (automatically deleted once out of scope)
+    }
 
-    cout << "\nMemory deallocated\n";
+    promptInput();
+    outputHeading("The Heap");
 
-    // even though the memory heapPointer points to is deleted, the pointer variable's value is not changed
-    // therefore, the heapPointer points to a location in memory that has been deallocated (dangling pointer)
-    cout << "\nPointer value: \033[35m" << heapPointer << "\033[0m\n";
+    {
+        // pointer to an integer created on the heap (managed by the programmer)
+        int* heapPointer = new int{3};
 
-    // it is best to set pointers to a nullptr after the memory they point to is deleted
-    heapPointer = nullptr;
+        // "heapPointer" is a pointer to an integer, not the integer itself
+        cout << "Pointer value: " << heapPointer << '\n';
+        cout << "Pointer dereferenced: " << *heapPointer << '\n';
 
-    cout << "\nPointer value (nullptr): \033[35m" << heapPointer << "\033[0m\n";
+        // because pointers are themselves variables, they have their own memory location (on the stack)
+        cout << "Pointer address: " << &heapPointer << '\n';
+
+        // outputs diagram of memory 
+        cout << "\n+-----------------Stack Diagram------------------+     +------Heap Diagram------+\n|    address     |     value      |  identifier  |     |    address     | value |\n+----------------+----------------+--------------+     +----------------+-------+\n| " << &heapPointer << " | " << heapPointer << " | heapPointer  |---->| " << heapPointer << " |   " << *heapPointer << "   |\n|       ...      |      ...       |     ...      |     |       ...      |  ...  |\n+----------------+----------------+--------------+     +----------------+-------+\n";
+
+        // must deallocate memory on the heap before access is lost to it (pointer on stack goes out of scope)
+        delete heapPointer;
+
+        cout << "\nMemory deallocated\n";
+
+        // the pointer variable's value is not changed (dangling pointer)
+        cout << "Pointer value: " << heapPointer << '\n';
+
+        // it is best to set to nullptr after the memory is deleted
+        heapPointer = nullptr;
+
+        cout << "\nDangling pointer handled\n";
+
+        cout << "Pointer value (nullptr): " << heapPointer << '\n';
+    }
+
+    promptInput();
+
+    return 0;
 }

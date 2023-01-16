@@ -120,6 +120,16 @@ int main() {
     }
 
     promptInput();
+    outputHeading("Type Conversion");
+
+    {
+        int num = 97;
+
+        cout << "Num (int): " << num << '\n';
+        cout << "Num (cast as char): " << (char) num << '\n'; // int cast as char
+    }
+
+    promptInput();
 
     return 0;
 }
