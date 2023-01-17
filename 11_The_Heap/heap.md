@@ -6,7 +6,7 @@ The **stack** and **heap** are regions of memory in a C++ program. The stack is 
 
 ### Stack Region
 
-Up to this point in this guide, all variables have been made on the stack. This means they occupy a region of memory that is automatically managed by the compiler (static memory). In other words, the programmer does not explicitly create (allocate) and destroy (deallocate) memory, instead they declare varables which are automatically deleted once out of scope. For example, if a variable were created on the stack within the body of the if statement, it would be destroyed once the body of the if statement ends.
+Up to this point in this guide, all variables have been made on the stack. This means they occupy a region of memory that is automatically managed by the compiler (static memory). In other words, the programmer does not explicitly create (allocate) and destroy (deallocate) memory, instead they declare variables which are automatically deleted once out of scope. For example, if a variable were created on the stack within the body of the if statement, it would be destroyed once the body of the if statement ends.
 
 ```C++
 if (true) {
@@ -54,7 +54,7 @@ SUMMARY: AddressSanitizer: 4 byte(s) leaked in 1 allocation(s).
 
 ## Example Program
 
-An example program is provided to demonstrate some of these concepts
+An example program is provided to demonstrate this material.
 
 ### Usage
 - compile: `make`

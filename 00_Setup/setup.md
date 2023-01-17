@@ -10,7 +10,7 @@ C++ is a popular programming language, typically used for application developmen
 
 To better transition from Python to C++, it is important to understand the major differences between the languages. Python is an interpreted language, meaning a program called an interpreter converts each line of code to machine code one at a time during execution (runtime). C++, on the other hand, is a compiled language. A program called a compiler (g++) converts an entire C++ program to machine code (compile time) before runtime. What this means in practice is that C++ is lower-level (closer to machine code) and typically faster (often at the expense of memory). There are many differences in syntax between the languages as well.
 
-It will soon become clear that often C++ takes more code to accomplish the same operation as Python, but this is not because C++ is "inefficient". Python will often take the same steps as more lengthy C++ code, the only difference is the interpreter fills in these gaps and does a lot of the heavy lifting. In truth, it is Python that is often the more inefficient of the two. Futhermore, C++ has more flexibility in what the programmer can accomplish (and how errors can occur).
+It will soon become clear that often C++ takes more code to accomplish the same operation as Python, but this is not because C++ is "inefficient". Python will often take the same steps as more lengthy C++ code, the only difference is the interpreter fills in these gaps and does a lot of the heavy lifting. In truth, it is Python that is often the more inefficient of the two. Furthermore, C++ has more flexibility in what the programmer can accomplish (and how errors can occur).
 
 > Takeaway: C++ must be compiled (g++) before it can be executed. C++ is closer to machine code (lower-level) than languages like Python.
 
@@ -45,7 +45,7 @@ The first two lines import `cout`, the standard output stream which works simila
 
 ## Example Program
 
-An example program is provided to demonstrate Hello World.
+An example program is provided to demonstrate this material.
 
 ### Usage
 - compile: `make`

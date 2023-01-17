@@ -1,6 +1,6 @@
 # Testing
 
-An crucial part of software engineering is the concept ot testing. Being able to verify that a program works is just as important as being able to write the program itself.
+An crucial part of software engineering is the concept of testing. Being able to verify that a program works is just as important as being able to write the program itself.
 
 ## Test-driven Development
 
@@ -25,7 +25,7 @@ As software increases in complexity, it becomes important to differentiate betwe
 
 ### Unit Testing
 
-**Unit testing** is the practice of testing seperate functions or sections of code, rather than the entire program. For example, if a `main` function calls function `A()` which calls function `B()`, the functionality of `A()` and `B()` can be confirmed with unit tests. A problem arises in that `A()` requires `B()` to work and therefore cannot be tested without `B()`. To get around this, **mock** functions are often used so that `A()` can be tested alone. Unit testing allows the programmer to verify and debug parts of their program instead of always debuggint he program as a whole (which is far more difficult).
+**Unit testing** is the practice of testing separate functions or sections of code, rather than the entire program. For example, if a `main` function calls function `A()` which calls function `B()`, the functionality of `A()` and `B()` can be confirmed with unit tests. A problem arises in that `A()` requires `B()` to work and therefore cannot be tested without `B()`. To get around this, **mock** functions are often used so that `A()` can be tested alone. Unit testing allows the programmer to verify and debug parts of their program instead of always debugging the program as a whole (which is far more difficult).
 
 ### Integration Testing
 
@@ -33,7 +33,7 @@ Though unit testing is useful, it alone cannot confirm the functionality of a pr
 
 ## Example Program
 
-A program is provided to demonstrate this material.
+An example program is provided to demonstrate this material.
 
 ### Usage
 - compile: `make`

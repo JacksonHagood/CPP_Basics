@@ -39,7 +39,7 @@ This repository consists of 14 folders that go through the basics of C++. This i
 # **Currently under construction**
 
 - TODO: Variables: NULL
-- TODO: Section 12: Dynamic Arrays
+- TODO: Functions: Function Pointers
 - TODO: Section 13: Classes
 - TODO: Section 14: Rule of Three
 - TODO: Section 15: Linked Lists

@@ -30,7 +30,7 @@ if (condition1) {
 
 ### Switch Statements
 
-**Switch statements** are similiar to if statements in that they execute code depending on conditions. Switch statements are best at executing one of many options depending on the value of a single value (each being a `case`). For example, determining what to output depending on the value of an integer. Each `case` must end with a `break` command (to exit the `switch`), otherwise the following cases will also be evaluated. A `default` case can be given for when no `break` has been executed previously.
+**Switch statements** are similar to if statements in that they execute code depending on conditions. Switch statements are best at executing one of many options depending on the value of a single value (each being a `case`). For example, determining what to output depending on the value of an integer. Each `case` must end with a `break` command (to exit the `switch`), otherwise the following cases will also be evaluated. A `default` case can be given for when no `break` has been executed previously.
 
 ```C++
 switch(num) {
@@ -111,7 +111,7 @@ for (int i = 0; i < 5; i++) {
 
 ## Example Program
 
-A program is provided to demonstrate this material.
+An example program is provided to demonstrate this material.
 
 ### Usage
 - compile: `make`

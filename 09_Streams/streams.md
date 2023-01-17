@@ -54,7 +54,7 @@ cout << endl;
 
 ## Input / Output Streams
 
-**Input / putput streams** combine the functionality of input and output streams.
+**Input / output streams** combine the functionality of input and output streams.
 
 ## Stream Classes
 
@@ -91,7 +91,7 @@ ofstream output("file.txt"); // opens output file stream with file.txt
 
 ## Example Program
 
-A program is provided to demonstrate this material.
+An example program is provided to demonstrate this material.
 
 ### Usage
 - compile: `make`

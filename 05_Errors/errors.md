@@ -41,7 +41,7 @@ main.cpp:1:12: error: ‘std::cout’ has not been declared
 
 ### Warnings
 
-When compiling a C++ program, often programmers will compile with several flags. Some of these flags alert the compiler to notify them of any warnings (`-Wextra`, `-Weffc++`, `-pedantic`, etc.). **Warnings** are not errors, but they often alert the programmer of code that could cause errors (runtime errors). Warnings do not prevent the compiltation of a program either, but they should usually not be ignored. A common example of a warning is a function missing a return statement for some path.
+When compiling a C++ program, often programmers will compile with several flags. Some of these flags alert the compiler to notify them of any warnings (`-Wextra`, `-Weffc++`, `-pedantic`, etc.). **Warnings** are not errors, but they often alert the programmer of code that could cause errors (runtime errors). Warnings do not prevent the compilation of a program either, but they should usually not be ignored. A common example of a warning is a function missing a return statement for some path.
 
 ```C++
 int foo() {
@@ -60,7 +60,7 @@ main.cpp:8:1: warning: control reaches end of non-void function [-Wreturn-type]
 
 ## Runtime Errors
 
-**Runtime errors** are errors that occur during the execution of a C++ program. These errors did not prevent compilation, but stop the program from continuing to execute because of some software error. These errors are typically harder to debug than compile-time errors. One common example of a runtime error is a **segmentation fault**. A segementation fault occurs when a C++ program attempts to access memory that is not available to it (like accessing an array beyond its bounds).
+**Runtime errors** are errors that occur during the execution of a C++ program. These errors did not prevent compilation, but stop the program from continuing to execute because of some software error. These errors are typically harder to debug than compile-time errors. One common example of a runtime error is a **segmentation fault**. A segmentation fault occurs when a C++ program attempts to access memory that is not available to it (like accessing an array beyond its bounds).
 
 ```C++
 int nums[3] = {0, 1, 2};
@@ -83,9 +83,9 @@ main.cpp:4:15: runtime error: division by zero
 
 ## Logical Errors
 
-> Note: memory errors are discussed in Section 11: The Heap
+> Note: memory leaks are discussed in Section 11: The Heap
 
-The final category of errors are logical errors. Logical errors are not real errors as they do not prevent the compilation or execution of a C++ program. Instead, logical errors are discrepencies between what the programmer intends to occur and what they actually wrote. These are typically the hardest errors to debug as the compiler has no real sense of when they occur. One example of a logical error the programmer expecting `5 / 2` to result in `2.5`, but instead get `2` as they forgot about integer division.
+The final category of errors are logical errors. Logical errors are not real errors as they do not prevent the compilation or execution of a C++ program. Instead, logical errors are discrepancies between what the programmer intends to occur and what they actually wrote. These are typically the hardest errors to debug as the compiler has no real sense of when they occur. One example of a logical error the programmer expecting `5 / 2` to result in `2.5`, but instead get `2` as they forgot about integer division.
 
 ```C++
 cout << 5 / 2; // possible logical error
@@ -93,7 +93,7 @@ cout << 5 / 2; // possible logical error
 
 ## Example Program
 
-A program is provided to demonstrate this material.
+An example program is provided to demonstrate this material.
 
 ### Usage
 - compile: `make`

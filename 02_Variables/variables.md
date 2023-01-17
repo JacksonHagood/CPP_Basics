@@ -32,9 +32,11 @@ const int num3 = 0;
 
 ## Types
 
+Variables in C++ are strongly typed, meaning variables have an associated type that cannot be changed. The language supports several primitive types in addition to user-defined data types (see Section 13: Classes).
+
 ### Primitives
 
-Booleans (`bool`), characters (`char`), integers (`int`), and floating point nubers (`float`) are the four main primitive types in C++. Once a variable is declared in C++ its type cannot be changed.
+Booleans (`bool`), characters (`char`), integers (`int`), and floating point numbers (`float`) are the four main primitive types in C++. Once a variable is declared in C++ its type cannot be changed.
 
 ```C++
 // 4 main primitive types
@@ -84,7 +86,7 @@ Integers in C++ are typically output in base 10, but other bases can be used. Th
 
 ### Arithmetic
 
-In order to change the values of variables after declaration, operators can be used. These operators work very similiarly to those in Python. For example, integer and floating point variables have the standard arithmetic operators (`+`, `-`, `*`, `/`, and `%`).
+In order to change the values of variables after declaration, operators can be used. These operators work very similarly to those in Python. For example, integer and floating point variables have the standard arithmetic operators (`+`, `-`, `*`, `/`, and `%`).
 
 ```C++
 // arithmetic operators
@@ -142,7 +144,7 @@ A final set of operators can be used to compare values. These operators (`>`, `<
 
 ## Arrays
 
-Arrays in C++ are very different from arrays in Python. An array in C++ is a **pointer** to a contiguous block of memory. Pointers will be discussed more in Section 09: Pointers. One result from this is that arrays in C++ cannot be resized once made (as the memory before and after the block might be in use). Techniques will be discussed later on how to get around this, but for now arrays are static. Arrays can be made similiar to other variables. the `[]` operator can be used to index an array.
+Arrays in C++ are very different from arrays in Python. An array in C++ is a **pointer** to a contiguous block of memory. Pointers will be discussed more in Section 09: Pointers. One result from this is that arrays in C++ cannot be resized once made (as the memory before and after the block might be in use). Techniques will be discussed later on how to get around this, but for now arrays are static. Arrays can be made similar to other variables. the `[]` operator can be used to index an array.
 
 ```C++
 int numArray[4]{5, 9, 12, 7}; // 4 * 4 = 16 bytes of memory
@@ -162,7 +164,7 @@ While C++ is a strongly typed language, it does support some type conversions. F
 
 ## Example Program
 
-A program is provided to demonstrate this material.
+An example program is provided to demonstrate this material.
 
 ### Usage
 - compile: `make`

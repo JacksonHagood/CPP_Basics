@@ -4,7 +4,7 @@
 
 ## Throwing Exceptions
 
-Exceptions are typically thrown when a function or section of code encounters input that will cause a runtime error or is invalid for some usage. Issues such as this must first be detected by the program (typically with an if statement). When such an issue is detected, an exception can then be **thrown**. Throwing an exception is done with the `throw` command followed by the exception type and a description of what occured.
+Exceptions are typically thrown when a function or section of code encounters input that will cause a runtime error or is invalid for some usage. Issues such as this must first be detected by the program (typically with an if statement). When such an issue is detected, an exception can then be **thrown**. Throwing an exception is done with the `throw` command followed by the exception type and a description of what occurred.
 
 ```C++
 throw std::invalid_argument("Integer is zero");
@@ -26,13 +26,13 @@ To prevent exceptions from becoming runtime errors, they must be handled. If the
 try {
     foo();
 } catch(...) {
-    cout << "Exception Occured"; // executes if foo() throws exception
+    cout << "Exception Occurred"; // executes if foo() throws exception
 }
 ```
 
 ## Example Program
 
-A program is provided to demonstrate this material.
+An example program is provided to demonstrate this material.
 
 ### Usage
 - compile: `make`

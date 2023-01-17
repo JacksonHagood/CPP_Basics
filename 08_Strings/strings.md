@@ -30,7 +30,7 @@ C++ has several special characters to support unique situations. For example, to
 
 ## C-strings
 
-**C-strings** are a built-in method of defining strings in C as an array of characters. As arrays in C++ do not have an automatic size property, the end of a C-string is denoted by a null character (`\0`). The end of the C-string is not necessarily the end of the array, but it can never exceed it. For example, the below c-string stores `"Hello"` in the first 5 indexes. The end of the c-string is then indicated by the null character in index 5. The last 4 indexes are therefore not part of the c-string, as they are part of the null character. This can be demonstrated by outputting the c-string which does not show any of the charcters after `"Hello"`.
+**C-strings** are a built-in method of defining strings in C as an array of characters. As arrays in C++ do not have an automatic size property, the end of a C-string is denoted by a null character (`\0`). The end of the C-string is not necessarily the end of the array, but it can never exceed it. For example, the below c-string stores `"Hello"` in the first 5 indexes. The end of the c-string is then indicated by the null character in index 5. The last 4 indexes are therefore not part of the c-string, as they are part of the null character. This can be demonstrated by outputting the c-string which does not show any of the characters after `"Hello"`.
 
 ```C++
 char array[10] = {'H', 'e', 'l', 'l', 'o', '\0', '-', '-', '-', '-'};
@@ -108,7 +108,7 @@ str.insert(2, "y"); // inserts "y" at index 2
 
 ## Example Program
 
-A program is provided to demonstrate this material.
+An example program is provided to demonstrate this material.
 
 ### Usage
 - compile: `make`

@@ -31,7 +31,7 @@ The **dereference operator** (`*`) allows effective use of pointers. Essentially
 
 ## Revisiting the `[]` Operator
 
-It turns out the `[]` operator, used to index an array, is another type of dereference operator. This is because arrays are actually pointers. Array variables point to the beggining of a section of contiguous memory and the `[]` operator is used to access elements.
+It turns out the `[]` operator, used to index an array, is another type of dereference operator. This is because arrays are actually pointers. Array variables point to the beginning of a section of contiguous memory and the `[]` operator is used to access elements.
 
 ```C++
 int numArray[3]; // value of numArray is address of first element
@@ -48,7 +48,7 @@ int* ptr = nullptr; // special value
 
 ## Example Program
 
-A program is provided to demonstrate this material.
+An example program is provided to demonstrate this material.
 
 ### Usage
 - compile: `make`

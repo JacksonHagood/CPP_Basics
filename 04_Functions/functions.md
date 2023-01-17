@@ -1,6 +1,6 @@
 # Functions
 
-Often when programming, it is useful to re-use sections of code and assign names to them. **Functions** are a mechanism that allows for this within C++. As expected, they work similiarly to functions in Python, but with some key differences.
+Often when programming, it is useful to re-use sections of code and assign names to them. **Functions** are a mechanism that allows for this within C++. As expected, they work similarly to functions in Python, but with some key differences.
 
 ## Function Signature
 
@@ -40,7 +40,7 @@ int main() {
 
 ### Pass by Reference
 
-**Pass by reference** is a way of providing parameters so that operations on the parameters affect the original variables used to call the function. In other words, the paramter variable is just another name for the same variable that was used outside the function (not a copy). To pass a variable by reference, add `&` after the type.
+**Pass by reference** is a way of providing parameters so that operations on the parameters affect the original variables used to call the function. In other words, the parameter variable is just another name for the same variable that was used outside the function (not a copy). To pass a variable by reference, add `&` after the type.
 
 ```C++
 void foo(int& num) {
@@ -72,6 +72,17 @@ int main() {
 }
 ```
 
-## Function Pointers
+## Example Program
 
-TODO
+An example program is provided to demonstrate this material.
+
+### Usage
+- compile: `make`
+- run: `./functions.exe`
+- cleanup: `make clean`
+
+## Sources and Further Material
+
+- [CPP Reference](https://en.cppreference.com/)
+- [CPP](https://www.cplusplus.com/doc/)
+

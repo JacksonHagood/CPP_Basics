@@ -6,7 +6,7 @@ Before exploring the basic components in C++, it is advantageous to discuss the 
 
 ### `;`
 
-Perhaps the first observation made by newcommers to C++ is the prevalence of semicolons. Each statement in C++ must be terminated with a semicolon (`;`). In Python, the end of statements could be determined using whitespace, but C++ has no concept of whitespace as a part of syntax (beyond separating parts of statements). Therefore, the semicolon is used to determine where statements end.
+Perhaps the first observation made by newcomers to C++ is the prevalence of semicolons. Each statement in C++ must be terminated with a semicolon (`;`). In Python, the end of statements could be determined using whitespace, but C++ has no concept of whitespace as a part of syntax (beyond separating parts of statements). Therefore, the semicolon is used to determine where statements end.
 
 ```C++
 int number = 1; // statement ends with semicolon
@@ -35,7 +35,7 @@ Often when writing code it is useful to explain what is happening or provide doc
 1 + 1; // this is an inline comment
 ```
 
-The other way to write comments is with the `/*` and `*/` symbols. These mark the beginning and end of a multi-line comment. These are more versatilze in their use as the compiler knows exactly where the comment starts and ends.
+The other way to write comments is with the `/*` and `*/` symbols. These mark the beginning and end of a multi-line comment. These are more versatile in their use as the compiler knows exactly where the comment starts and ends.
 
 ```C++
 /*
@@ -119,7 +119,7 @@ cin >> number; // reads data from cin into variable number
 
 ## Example Program
 
-A program is provided to demonstrate this material.
+An example program is provided to demonstrate this material.
 
 ### Usage
 - compile: `make`

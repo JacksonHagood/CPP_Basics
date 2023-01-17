@@ -45,4 +45,18 @@ Finally, the programmer can point the original array pointer to point to the new
 array = newArray;
 ```
 
-Now, the programmer has successfully "resized" the array so that the array pointer variable points to an array with one more index. In reality, no actual array has been resized. Instead, the array pointer has been changed to point to a larger section of memory. This creates the illusion that the array has been resized, but the memory addresses are different. 
+Now, the programmer has successfully "resized" the array so that the array pointer variable points to an array with one more index. In reality, no actual array has been resized. Instead, the array pointer has been changed to point to a larger section of memory. This creates the illusion that the array has been resized, but the memory addresses are different.
+
+## Example Program
+
+An example program is provided to demonstrate this material.
+
+### Usage
+- compile: `make`
+- run: `./dynamic_arrays.exe`
+- cleanup: `make clean`
+
+## References
+
+- [CPP Reference](https://en.cppreference.com/)
+- [CPP](https://www.cplusplus.com/doc/)
