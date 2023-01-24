@@ -50,10 +50,6 @@ for (Node* curr = head; curr != nullptr; curr = curr->next) {
 }
 ```
 
-## Operations
-
-TODO
-
 ## Example Program
 
 An example program is provided to demonstrate this material.

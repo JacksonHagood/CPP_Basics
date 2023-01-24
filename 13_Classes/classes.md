@@ -146,3 +146,17 @@ All of these functions (outside of the constructors) can be called by giving the
 addr1.setName("Jackson Hagood");
 cout << addr1.getName();
 ```
+
+## Example Program
+
+An example program is provided to demonstrate this material.
+
+### Usage
+- compile: `make`
+- run: `./classes.exe`
+- cleanup: `make clean`
+
+## References
+
+- [CPP Reference](https://en.cppreference.com/)
+- [CPP](https://www.cplusplus.com/doc/)

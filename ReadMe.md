@@ -50,6 +50,8 @@ This repository consists of 14 folders that go through the basics of C++. This i
 
 - TODO: Section 14: Rule of Three
 
+- TODO: Linked lists: operations
+
 - TODO: Appendix: Python Review
 - TODO: Appendix: Makefiles
 - TODO: Appendix: Git
