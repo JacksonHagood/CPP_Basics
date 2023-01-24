@@ -40,6 +40,8 @@ C->next = nullptr;
 
 ## Linked Lists
 
+> Note: Linked lists are typically defined as classes.
+
 Linked lists are collections of nodes on the heap. They reference these nodes using a head and (optionally) tail pointers. From these pointers, all of the nodes in the linked list can be found by traversing the previous node. As an example, a for loop can be used to traverse a linked list by starting at the head, iterating by moving a temporary pointer forward (`curr = curr->next`) and stopping once a `nullptr` is reached.
 
 ```C++
@@ -47,6 +49,10 @@ for (Node* curr = head; curr != nullptr; curr = curr->next) {
     cout << "Node: " << curr->data << '\n';
 }
 ```
+
+## Operations
+
+TODO
 
 ## Example Program
 
