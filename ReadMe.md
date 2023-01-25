@@ -36,19 +36,18 @@ This repository consists of 14 folders that go through the basics of C++. This i
 - [Git](Appendix/git.md)
 - [C](Appendix/c.md)
 
-# **Currently under construction**
-
-- TODO: Variables: NULL
-- TODO: Functions: function pointers
-- TODO: Functions: const paramters
-- TODO: Classes: operators
-- TODO: Classes: polymorphism
-- TODO: Classes: static & const
-- TODO: Classes: this
-- TODO: Classes: header files
-- TODO: Classes: heap
-- TODO: Linked lists: operations
-- TODO: Appendix: Python Review
-- TODO: Appendix: Makefiles
-- TODO: Appendix: Git
-- TODO: Appendix: C
+## Currently Under Construction TODO:
+- Variables: NULL
+- Functions: function pointers
+- Functions: const paramters
+- Classes: operators
+- Classes: polymorphism
+- Classes: static & const
+- Classes: this
+- Classes: header files
+- Classes: heap
+- Linked lists: operations
+- Appendix: Python Review
+- Appendix: Makefiles
+- Appendix: Git
+- Appendix: C
