@@ -39,19 +39,15 @@ This repository consists of 14 folders that go through the basics of C++. This i
 # **Currently under construction**
 
 - TODO: Variables: NULL
-
-- TODO: Functions: Function Pointers
-
+- TODO: Functions: function pointers
+- TODO: Functions: const paramters
 - TODO: Classes: operators
 - TODO: Classes: polymorphism
-- TODO: Classes: static
+- TODO: Classes: static & const
+- TODO: Classes: this
 - TODO: Classes: header files
-- TODO: Classes: objects on the heap
-
-- TODO: Section 14: Rule of Three
-
+- TODO: Classes: heap
 - TODO: Linked lists: operations
-
 - TODO: Appendix: Python Review
 - TODO: Appendix: Makefiles
 - TODO: Appendix: Git
