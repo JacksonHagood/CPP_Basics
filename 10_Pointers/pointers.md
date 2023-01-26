@@ -46,6 +46,38 @@ Like normal variables, pointers have a special null value: `nullptr`. The progra
 int* ptr = nullptr; // special value
 ```
 
+## Function Pointers
+
+> Note: This is not an in-depth explanation of function pointers.
+
+Variables are not the only structures stored in memory. Among other items, the source code of programs are present in a section of memory for text. This section stores the compiled code for all the functions present in a C++ program. Therefore, like anything else in memory, these functions have an associated address. For example, a function `adder()` is declared to simply return the sum of two integers.
+
+```C++
+int adder(int a, int b) {
+    return a + b;
+}
+```
+
+To output the address of `adder()`, the programmer can output the functions identifier (without `()`) and cast it as a `void*`.
+
+```C++
+cout << (void*) adder; // outputs address of adder() (0x...)
+```
+
+Access to function pointers provides some interesting use cases. One example is passing function pointers as function arguments. For example, a function `caller()` accepts two integers and a function pointer. The function pointer is outlined as a function that accepts two integers and returns an integer.
+
+```C++
+int caller(int a, int b, int (*function)(int, int)) {
+    return function(a, b);
+}
+```
+
+Since `adder()` meets these input and output requirements, it can be passed to caller as a function pointer. For example, if caller were invoked with `2`, `3`, and `&adder` it would return `5`.
+
+```C++
+caller(2, 3, &adder); // returns 5.
+```
+
 ## Example Program
 
 An example program is provided to demonstrate this material.
