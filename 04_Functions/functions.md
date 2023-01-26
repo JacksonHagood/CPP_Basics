@@ -72,6 +72,16 @@ int main() {
 }
 ```
 
+### Pass as Constant
+
+Oustide of whether parameters can be pass by value, reference, or pointer, they can also be passed as a constant. If a variable is passed as a constant, it cannot be changed within that function (regardless of how else it was passed).
+
+```C++
+void pass_as_const(const int num) {
+    // num cannot be changed
+}
+```
+
 ## Example Program
 
 An example program is provided to demonstrate this material.

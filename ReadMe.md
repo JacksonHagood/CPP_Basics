@@ -39,7 +39,6 @@ This repository consists of 14 folders that go through the basics of C++. This i
 ## Currently Under Construction TODO:
 - Variables: NULL
 - Functions: function pointers
-- Functions: const paramters
 - Classes: operators
 - Classes: polymorphism
 - Classes: static & const

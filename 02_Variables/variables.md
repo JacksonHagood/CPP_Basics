@@ -107,7 +107,7 @@ num++; // increment
 
 ### Bitwise
 
-Another set of operators can be used on integers: bitwise operators. These operators perform operations on each of the bits in a number. For example, bitwise and (`&`) performs the equivalent of logical and on each of the bits. There are also bitwise operators for or (`|`), xor (`^`), and not (`~`). The left shift (`<<`) and right shift (`>>`) operators will move the bits over a provided number of spaces (same as raising two a power or root).
+Another set of operators can be used on integers: bitwise operators. These operators perform operations on each of the bits in a number. For example, bitwise and (`&`) performs the equivalent of logical AND on each of the bits. There are also bitwise operators for OR (`|`), XOR (`^`), and NOT (`~`). The left shift (`<<`) and right shift (`>>`) operators will move the bits over a provided number of spaces (same as raising two a power or root).
 
 ```C++
 // bitwise operators
@@ -121,7 +121,7 @@ Another set of operators can be used on integers: bitwise operators. These opera
 
 ### Logical
 
-The logical operators work like counterparts in Python (`&&`, `||`, and `!`). Unlike bitwise operators, these perform the logical function over the variable as a whole, not the individual bits (evaluate to a boolean).
+The logical operators work like counterparts in Python (`&&`, `||`, and `!`). Unlike bitwise operators, these perform the logical function over the variable as a whole, not the individual bits (evaluate to a boolean). Notice there is no logical XOR operator. This is beacuse `!=` implements the same thing.
 
 ```C++
 8 && 2; // 1
