@@ -35,17 +35,13 @@ This repository consists of 14 folders that go through the basics of C++. This i
 - [Makefiles](Appendix/make.md)
 - [Git](Appendix/git.md)
 - [C](Appendix/c.md)
+- [File Types](Appendix/file_types.md)
 
 ## Currently Under Construction TODO:
 - Variables: NULL
-- Classes: operators
-- Classes: polymorphism
-- Classes: static & const
-- Classes: this
-- Classes: header files
-- Classes: heap
 - Linked lists: operations
 - Appendix: Python Review
 - Appendix: Makefiles
 - Appendix: Git
 - Appendix: C
+- Appendix: File Types

@@ -36,32 +36,35 @@ class Address {
 
         // constructors
         Address();
-        Address(string NAME, string LINE_ONE, string LINE_TWO, string CITY, string STATE, int ZIP_CODE, string COUNTRY);
+        Address(const string NAME, const string LINE_ONE, const string LINE_TWO, const string CITY, const string STATE, const int ZIP_CODE, const string COUNTRY);
 
         // getter functions
-        string getName();
-        string getLineOne();
-        string getLineTwo();
-        string getCity();
-        string getState();
-        int getZipCode();
-        string getCountry();
+        string getName() const;
+        string getLineOne() const;
+        string getLineTwo() const;
+        string getCity() const;
+        string getState() const;
+        int getZipCode() const;
+        string getCountry() const;
 
         // setter functions
-        void setName(string NAME);
-        void setLineOne(string LINE_ONE);
-        void setLineTwo(string LINE_TWO);
-        void setCity(string CITY);
-        void setState(string STATE);
-        void setZipCode(int ZIP_CODE);
-        void setCountry(string COUNTRY);
+        void setName(const string NAME);
+        void setLineOne(const string LINE_ONE);
+        void setLineTwo(const string LINE_TWO);
+        void setCity(const string CITY);
+        void setState(const string STATE);
+        void setZipCode(const int ZIP_CODE);
+        void setCountry(const string COUNTRY);
 
         // other functions / operations
-        string toString();
+        string toString() const;
+        friend std::ostream& operator<<(std::ostream& os, const Address& in);
 };
 ```
 
 Each component of a class needs an **access specifier**. These tell the compiler whether or not the component can be accessed from outside the class. A `private` component can only be accessed from within the class and a `public` component can be accessed anywhere. Typically, **member variables** are `private` and **member functions** are `public` (there are exceptions). In this class, there are 7 member variables, each denoted by a type and identifier. The definitions of the member functions are often given in `.cpp` files separate from the `.h` file.
+
+### Constructors
 
 This class has four main categories of functions. First, there are two constructors. **Constructors** are used when declaring objects to give them some initial value. This class has a **default constructor** and a **parameterized constructor**. Both functions use a **member initialization list** to quickly initialize each of the member variables. 
 
@@ -82,7 +85,7 @@ Address::Address() :
 
 ```C++
 // parameterized constructor
-Address::Address(string NAME, string LINE_ONE, string LINE_TWO, string CITY, string STATE, int ZIP_CODE, string COUNTRY) :
+Address::Address(const string NAME, const string LINE_ONE, const string LINE_TWO, const string CITY, const string STATE, const int ZIP_CODE, const string COUNTRY) :
     name(NAME),
     line_one(LINE_ONE),
     line_two(LINE_TWO),
@@ -107,35 +110,39 @@ Address addr1();
 Address addr2("Administration Building", "400 Bizzell St", "", "College Station", "TX", 77843, "USA");
 ```
 
-The next categories of member functions are the **getters** and **setters** these are typically one line functions used to obtain and set the value of member variables (as they are private and cannot be directly accessed).
+### Getters & Setters
+
+The next categories of member functions are the **getters** and **setters** these are typically one line functions used to obtain and set the value of member variables (as they are private and cannot be directly accessed). Notice that the getter functions have the `const` keyword after the function identifier and parameters. This makes what is know as a constant member function. **Constant member functions** are member functions that do not change any of the member variables in a class. For example, it would be a compile-time error to change the `name` member variable in the `getName()` member function as it is `const`.
 
 ```C++
 // getter functions
-string Address::getName() { return name; }
-string Address::getLineOne() { return line_one; }
-string Address::getLineTwo() { return line_two; }
-string Address::getCity() { return city; }
-string Address::getState() { return state; }
-int Address::getZipCode() { return zip_code; }
-string Address::getCountry() { return country; }
+string Address::getName() const { return name; }
+string Address::getLineOne() const{ return line_one; }
+string Address::getLineTwo() const { return line_two; }
+string Address::getCity() const { return city; }
+string Address::getState() const { return state; }
+int Address::getZipCode() const { return zip_code; }
+string Address::getCountry() const { return country; }
 ```
 
 ```C++
 // setter functions
-void Address::setName(string NAME) { name = NAME; }
-void Address::setLineOne(string LINE_ONE) { line_one = LINE_ONE; }
-void Address::setLineTwo(string LINE_TWO) { line_two = LINE_TWO; }
-void Address::setCity(string CITY) { city = CITY; }
-void Address::setState(string STATE) { state = STATE; }
-void Address::setZipCode(int ZIP_CODE) { zip_code = ZIP_CODE; }
-void Address::setCountry(string COUNTRY) { country = COUNTRY; }
+void Address::setName(const string NAME) { name = NAME; }
+void Address::setLineOne(const string LINE_ONE) { line_one = LINE_ONE; }
+void Address::setLineTwo(const string LINE_TWO) { line_two = LINE_TWO; }
+void Address::setCity(const string CITY) { city = CITY; }
+void Address::setState(const string STATE) { state = STATE; }
+void Address::setZipCode(const int ZIP_CODE) { zip_code = ZIP_CODE; }
+void Address::setCountry(const string COUNTRY) { country = COUNTRY; }
 ```
+
+### Other Functions
 
 Finally, there is one more function that falls under the category of miscellaneous operations specific to that class. In this example, a `toString()` function is given to return the object's representation as a string.
 
 ```C++
 // other functions / operations
-string Address::toString() {
+string Address::toString() const {
     return name + '\n' + line_one + '\n' + (line_two == "" ? "" : line_two + '\n') + city + ", " + state + '\n' + std::to_string(zip_code) + '\n' + country + '\n';
 }
 ```
@@ -145,6 +152,78 @@ All of these functions (outside of the constructors) can be called by giving the
 ```C++
 addr1.setName("Jackson Hagood");
 cout << addr1.getName();
+```
+
+### Operator Overloading
+
+A special category of "functions" are operators. As the programmer is defining their own class, they can also define how certain operators behave with their new objects. This is called **operator overloading** and is a form of **polymorphism**. Operators appear just like functions (they accept arguments and return a value). The difference is their name specifies what operator this definition is for. In this example, the programmer is defining how the `<<` operator should work given an output stream and an address (`cout << addr1`). Notice that in the class definition this function is declared as a `friend`. **Friends** are functions that technically exist outside of the class, but have access to all the private members of the class. In this example, the `<<` operator definition has access to the address parameter's private member variables.
+
+```C++
+std::ostream& operator<<(std::ostream& os, const Address& in) {
+    os << in.name << '\n' << in.line_one << '\n' << (in.line_two == "" ? "" : in.line_two + '\n') << in.city << ", " << in.state << '\n' << std::to_string(in.zip_code) << '\n' + in.country << '\n';
+    return os;
+}
+```
+
+## Special Class Properties
+
+### `static`
+
+**Static** members are member variables or member functions that are the same for every instance of the class. As an example, consider a ticket class that generates a special number for each ticket. This class also wants to keep track of how many tickets are sold, so it keeps a static count variable.
+
+```C++
+class Ticket {
+    private:
+        unsigned int num;
+
+        // static member variables
+        static unsigned int count;
+
+    public:
+        Ticket() : num(++count) {}
+        unsigned int getNum() { return num; }
+
+        // static member functions
+        static unsigned int getSold() { return count; }
+};
+```
+
+No matter how many instances of the Ticket class there are, they all share the same `count` variable and `getSold()` function. To demonstrate this, if three tickets were generated and their getSold() function were called, each of them would return the same value of 3.
+
+```C++
+t1.getSold(); // 3
+t2.getSold(); // 3
+t3.getSold(); // 3
+```
+
+### `this`
+
+`this` is a special keyword for when inside a member function. `this` is a pointer to the current instance of the class. For example, if a `getAddress()` function were added to the ticket class, it could get the address of the current instance simply by returning `this`.
+
+```C++
+Ticket* getAddress() { return this; } // returns address of instance (0x...)
+```
+
+The `this` keyword can be used to obtain the member variables and member functions of the class. For example, if the user wanted to get the `num` attribute of the current instance, they could use `(*this).num` (notice the need to dereference).
+
+### `->`
+
+When the programmer makes a pointer to an instance of a class, they must dereference it to access the members. As an example, the programmer makes a pointer to a ticket object on the heap.
+
+```C++
+Ticket* t4 = new Ticket();
+```
+
+Now, to access the `getNum()` function of `t4`, the program must first dereference the pointer.
+
+```C++
+(*t4).getNum(); // dereference and get member
+```
+
+The `->` operator is another way to do this. This special dereference operator is used to dereference a pointer to an object and get a member from it.
+
+```C++
+t4->getNum(); // dereference and get member
 ```
 
 ## Example Program

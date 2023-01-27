@@ -16,7 +16,7 @@ Address::Address() :
 }
 
 // parameterized constructor
-Address::Address(string NAME, string LINE_ONE, string LINE_TWO, string CITY, string STATE, int ZIP_CODE, string COUNTRY) :
+Address::Address(const string NAME, const string LINE_ONE, const string LINE_TWO, const string CITY, const string STATE, const int ZIP_CODE, const string COUNTRY) :
     name(NAME),
     line_one(LINE_ONE),
     line_two(LINE_TWO),
@@ -29,24 +29,30 @@ Address::Address(string NAME, string LINE_ONE, string LINE_TWO, string CITY, str
 }
 
 // getter functions
-string Address::getName() { return name; }
-string Address::getLineOne() { return line_one; }
-string Address::getLineTwo() { return line_two; }
-string Address::getCity() { return city; }
-string Address::getState() { return state; }
-int Address::getZipCode() { return zip_code; }
-string Address::getCountry() { return country; }
+string Address::getName() const { return name; }
+string Address::getLineOne() const{ return line_one; }
+string Address::getLineTwo() const { return line_two; }
+string Address::getCity() const { return city; }
+string Address::getState() const { return state; }
+int Address::getZipCode() const { return zip_code; }
+string Address::getCountry() const { return country; }
 
 // setter functions
-void Address::setName(string NAME) { name = NAME; }
-void Address::setLineOne(string LINE_ONE) { line_one = LINE_ONE; }
-void Address::setLineTwo(string LINE_TWO) { line_two = LINE_TWO; }
-void Address::setCity(string CITY) { city = CITY; }
-void Address::setState(string STATE) { state = STATE; }
-void Address::setZipCode(int ZIP_CODE) { zip_code = ZIP_CODE; }
-void Address::setCountry(string COUNTRY) { country = COUNTRY; }
+void Address::setName(const string NAME) { name = NAME; }
+void Address::setLineOne(const string LINE_ONE) { line_one = LINE_ONE; }
+void Address::setLineTwo(const string LINE_TWO) { line_two = LINE_TWO; }
+void Address::setCity(const string CITY) { city = CITY; }
+void Address::setState(const string STATE) { state = STATE; }
+void Address::setZipCode(const int ZIP_CODE) { zip_code = ZIP_CODE; }
+void Address::setCountry(const string COUNTRY) { country = COUNTRY; }
 
-// other functions / operations
-string Address::toString() {
+// to string function
+string Address::toString() const {
     return name + '\n' + line_one + '\n' + (line_two == "" ? "" : line_two + '\n') + city + ", " + state + '\n' + std::to_string(zip_code) + '\n' + country + '\n';
+}
+
+// ostream operator for address class
+std::ostream& operator<<(std::ostream& os, const Address& in) {
+    os << in.name << '\n' << in.line_one << '\n' << (in.line_two == "" ? "" : in.line_two + '\n') << in.city << ", " << in.state << '\n' << std::to_string(in.zip_code) << '\n' + in.country << '\n';
+    return os;
 }
