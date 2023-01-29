@@ -1,3 +1,6 @@
+# ifndef HELPER_H
+# define HELPER_H
+
 # include <iostream>
 # include <string>
 using std::cout, std::cin, std::string;
@@ -14,3 +17,5 @@ void promptInput() {
     cin.get();
     system("clear");
 }
+
+# endif

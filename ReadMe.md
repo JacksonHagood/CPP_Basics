@@ -41,7 +41,6 @@ This repository consists of 14 folders that go through the basics of C++. This i
 - Variables: NULL
 - Linked lists: operations
 - Appendix: Python Review
-- Appendix: Makefiles
 - Appendix: Git
 - Appendix: C
 - Appendix: File Types
