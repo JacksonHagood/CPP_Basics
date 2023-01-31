@@ -42,5 +42,4 @@ This repository consists of 14 folders that go through the basics of C++. This i
 - Linked lists: operations
 - Appendix: Python Review
 - Appendix: Git
-- Appendix: C
-- Appendix: File Types
+- Appendix: Namespaces
