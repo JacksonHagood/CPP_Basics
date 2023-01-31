@@ -1,6 +1,6 @@
 # Functions
 
-Often when programming, it is useful to re-use sections of code and assign names to them. **Functions** are a mechanism that allows for this within C++. As expected, they work similarly to functions in Python, but with some key differences.
+Often when programming, it is useful to re-use sections of code and assign identifiers to them. **Functions** are a mechanism that allows for this within C++. As expected, they work similarly to functions in Python, but with some key differences.
 
 ## Function Signature
 
@@ -15,12 +15,13 @@ int foo() {
 ```C++
 void hello_world() {
     cout << "Hello, World!\n";
+    return; // optional return that stops execution
 }
 ```
 
 ## Parameters
 
-Function's in C++ can have **parameters** each containing a name and a type. These parameters comprise the input(s) of the function and can be provided in multiple ways. There are three ways parameters can be passed into functions: pass by value, pass by reference, and pass by pointer.
+Function's in C++ can have **parameters** each containing an identifier and a type. These parameters comprise the input(s) of the function and can be provided in multiple ways. There are three ways parameters can be passed into functions: pass by value, pass by reference, and pass by pointer.
 
 ### Pass by Value
 
@@ -30,7 +31,9 @@ The most common way of passing parameters into functions is through **pass by va
 void foo(int num) {
     num = 1; // changes only num, which is a copy of original
 }
+```
 
+```C++
 int main() {
     int original = 0;
     foo(original);
@@ -46,7 +49,9 @@ int main() {
 void foo(int& num) {
     num = 1; // operations on num change both
 }
+```
 
+```C++
 int main() {
     int original = 0;
     foo(original);
@@ -56,7 +61,7 @@ int main() {
 
 ### Pass by Pointer
 
-> Note: pass by pointer is discussed more in Section 09: Pointers.
+> Note: pointers are discussed more in Section 09: Pointers.
 
 A final way to pass parameters is with **pass by pointer**. Pass by pointer is really just a special case of pass by value that leverages how pointers work to change a specific location in memory. In practice, this will produce the same results as pass by reference, but it does require the data type to be changed to a pointer. A side effect of arrays being pointers is that arrays are always passed by pointer (functions will change the original arrays).
 
@@ -64,7 +69,9 @@ A final way to pass parameters is with **pass by pointer**. Pass by pointer is r
 void foo(int* ptr) {
     *ptr = 1; // operations on the memory address of original
 }
+```
 
+```C++
 int main() {
     int original = 0;
     foo(&original);
@@ -95,4 +102,3 @@ An example program is provided to demonstrate this material.
 
 - [CPP Reference](https://en.cppreference.com/)
 - [CPP](https://www.cplusplus.com/doc/)
-

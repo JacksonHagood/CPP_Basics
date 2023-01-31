@@ -4,7 +4,7 @@ Flow control enables programmers to decide how a program executes according to d
 
 ## Branch Statements
 
-Like Python, C++ has mechanisms to branch programs depending on conditions. These enable the programmer to define behavior depending on data. In C++ this can be done with if statements or switch cases. Other branching statements, like `goto` are rarely used. A special operator called the ternary operator can also be used instead of if statements.
+Like Python, C++ has mechanisms to branch programs depending on conditions. These enable the programmer to define behavior depending on data. In C++ this can be done with if statements or switch cases. Other branching statements, like `goto` are rarely used.
 
 ### If Statements
 
@@ -54,6 +54,7 @@ switch(num) {
 The **ternary operator** is a special operator that works like an if-else statement. The operator uses a condition (ending with `?`) to execute one of two expressions (separated by `:`). The ternary operator provides a concise way to have in-line if statements.
 
 ```C++
+// c is 'T' if condition is true, 'F' otherwise
 char c = condition ? 'T' : 'F';
 ```
 

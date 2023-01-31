@@ -4,6 +4,8 @@ Before exploring the basic components in C++, it is advantageous to discuss the 
 
 ## Basics
 
+C++ is much more explicit with its syntax with Python. This leads to more well-defined code and less ambiguity.
+
 ### `;`
 
 Perhaps the first observation made by newcomers to C++ is the prevalence of semicolons. Each statement in C++ must be terminated with a semicolon (`;`). In Python, the end of statements could be determined using whitespace, but C++ has no concept of whitespace as a part of syntax (beyond separating parts of statements). Therefore, the semicolon is used to determine where statements end.
@@ -14,7 +16,7 @@ int number = 1; // statement ends with semicolon
 
 ### `{}`
 
-Core to C++ is the concept of **scope**. Each variable in C++ has an associated scope with it. Once the scope of this variable is exceeded, the variable no longer exists and cannot be used. To best illustrate the start and end of these scopes, the curly brackets are used (`{}`). For example, the main function's start and end are shown by the open (`{`) and close (`}`) curly brackets.
+Core to C++ is the concept of **scope** as each variable in C++ has an associated scope with it. Once the scope of a variable is exceeded, the variable no longer exists and cannot be used. To best illustrate the start and end of these scopes, the curly brackets are used (`{}`). For example, the main function's start and end are shown by the open (`{`) and close (`}`) curly brackets.
 
 ```C++
 int main()
@@ -25,7 +27,7 @@ int main()
 
 ### Comments
 
-Often when writing code it is useful to explain what is happening or provide documentation. Comments are a mechanism to do this next to the code itself. C++ has two ways to write comments. Single line comments can be written with the `//` symbol. All of the text after this symbol on that line is considered a comment by the compiler and therefore ignored. These comments can be written on the same line as actual C++ statements (inline comments).
+Often when writing code it is useful to explain what is happening or provide documentation. Comments are a mechanism to do this in the same files as source code. C++ has two ways to write comments. Single line comments can be written with the `//` symbol. All of the text after this symbol on that line is considered a comment by the compiler and therefore ignored. These comments can be written on the same line as actual C++ statements (inline comments).
 
 ```C++
 // this is a single line comment
@@ -55,7 +57,7 @@ The other way to write comments is with the `/*` and `*/` symbols. These mark th
 
 ### Includes
 
-The `#include` command allows the inclusion of external (from this program) C++ **header** files. These files can be split into two main categories: the [standard library](https://en.cppreference.com/w/cpp/header) and user made header files. Perhaps the most commonly imported header file is `iostream` which provides basic **input** and **output**.
+The `#include` command allows the inclusion of external (from this program) C++ **header** files. These files can be split into two main categories: the [standard library](https://en.cppreference.com/w/cpp/header) and user-defined header files. Perhaps the most commonly imported header file is `iostream` which provides basic **input** and **output** functionality.
 
 ```C++
 # include <iostream>
@@ -75,7 +77,7 @@ int main() {
 }
 ```
 
-Constantly writing the namespace before identifiers can often become unnecessary. To get around this issue, the `using` command can be used. This allows the programmer to define what namespaces or specific identifiers to use so they do not have to write them constantly later on. For example, if `iostream` was included and the user wishes to use `cout` without writing `std` before each command, they could write `using namespace std` so the entire standard namespace was available.
+Constantly writing the namespace before identifiers can often become unnecessary. To get around this issue, the `using` command can be used. This allows the programmer to define what namespaces or specific identifiers to use so they do not have to write them out later on. For example, if `iostream` was included and the user wishes to use `cout` without writing `std` before each command, they could instruct `using namespace std` so the entire standard namespace was available.
 
 ```C++
 # include <iostream>
@@ -93,7 +95,7 @@ It is not best practice to import entire namespaces when only a few functions ar
 using std::cout; // only std::cout is used
 
 int main() {
-    cout << "B";
+    cout << "C";
 }
 ```
 
@@ -101,7 +103,7 @@ int main() {
 
 > Note: streams are covered more in depth in Section 09: Streams.
 
-Finally, with `iostream` important and its namespace available, the programmer can implement basic program input and output. `cout` is the standard output stream in C++. In other words, this **stream** object is the target for whenever the programmer wishes to output something (usually to a terminal). Data is output to `cout` using the `<<` operator. Values as well as variables can be used with `cout`. If the user wishes to move to the next line, they can use the `endl` command (as part of the standard namespace).
+Finally, with `iostream` imported and its namespace available, the programmer can implement basic program input and output. `cout` is the standard output stream in C++. In other words, this "stream" object is the target for whenever the programmer wishes to output something (usually to a terminal). Data is output to `cout` using the `<<` operator. Values as well as variables can be used with `cout`. If the user wishes to move to the next line, they can use the `endl` command (as part of the standard namespace).
 
 ```C++
 cout << "Hello" << endl; // endl is for a newline character

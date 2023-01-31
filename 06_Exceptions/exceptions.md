@@ -1,6 +1,6 @@
 # Exceptions
 
-**Exceptions** are useful tools for avoiding errors in C++ while handling special situations. Essentially, by replacing errors with exceptions, the program can recover from potential issues instead of hitting a runtime error and stopping execution. This is because exceptions that are "thrown" can be "caught" and handled accordingly.
+**Exceptions** are useful tools for avoiding errors in C++ while handling special situations. Essentially, by replacing errors with exceptions, the program can recover from potential issues instead of encountering a runtime error which stops execution. This is because exceptions that are "thrown" can be "caught" and handled accordingly.
 
 ## Throwing Exceptions
 

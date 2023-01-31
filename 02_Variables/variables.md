@@ -48,7 +48,7 @@ float floating = 0.1;
 
 ### Size
 
-Each type in C++ has an associated size (in bytes) that cannot be altered. For example, a standard integer (`int`) takes up 4 bytes (32 bits) of memory. If the programmer wishes to have an integer with a different size, they can use the **short** and **long** keywords. For a 1 byte integer, the `char` type can be used as characters are represented as 1 byte numbers in ASCII. Depending on the operating system, the size of types can vary slightly. If the programmer wants an integer that can only be positive (or 0) they can use the **unsigned** keyword.
+Each type in C++ has an associated size (in bytes) that cannot be altered. For example, a standard integer (`int`) takes up 4 bytes (32 bits) of memory. If the programmer wishes to have an integer with a different size, they can use the **short** and **long** keywords. For a 1 byte integer, the `char` type can be used as characters are represented as 1 byte numbers in ASCII. Depending on the operating system, the size of types can vary slightly. If the programmer wants an integer that can only be positive (or 0) they can use the **unsigned** keyword. To get the size of a type, the programmer can use the `sizeof()` function.
 
 ```C++
 char num1; // 1 byte
@@ -73,7 +73,7 @@ max++; // overflow: maximum value exceeded
 
 ### Bases
 
-Integers in C++ are typically output in base 10, but other bases can be used. This can be done by giving a prefix (`0b` for binary, `0x` for hex).
+Integers in C++ are typically handled in base 10, but other bases can be used. This can be done by giving a prefix (`0b` for binary, `0x` for hex).
 
 ```C++
 // different bases
@@ -86,7 +86,7 @@ Integers in C++ are typically output in base 10, but other bases can be used. Th
 
 ### Arithmetic
 
-In order to change the values of variables after declaration, operators can be used. These operators work very similarly to those in Python. For example, integer and floating point variables have the standard arithmetic operators (`+`, `-`, `*`, `/`, and `%`).
+In order to change the values of variables after declaration, operators can be used. These operators work very similarly to those in Python. For example, integer and floating point variables have the standard arithmetic operators (`+`, `-`, `*`, `/`, and `%`). Note that dividing two integers will produce an integer in C++.
 
 ```C++
 // arithmetic operators
@@ -107,7 +107,7 @@ num++; // increment
 
 ### Bitwise
 
-Another set of operators can be used on integers: bitwise operators. These operators perform operations on each of the bits in a number. For example, bitwise and (`&`) performs the equivalent of logical AND on each of the bits. There are also bitwise operators for OR (`|`), XOR (`^`), and NOT (`~`). The left shift (`<<`) and right shift (`>>`) operators will move the bits over a provided number of spaces (same as raising two a power or root).
+Another set of operators are the bitwise operators. These operators perform operations on each of the bits in a number. For example, bitwise and (`&`) performs the equivalent of AND on each of the bits. There are also bitwise operators for OR (`|`), XOR (`^`), and NOT (`~`). The left shift (`<<`) and right shift (`>>`) operators will move the bits over a provided number of spaces.
 
 ```C++
 // bitwise operators
@@ -144,7 +144,7 @@ A final set of operators can be used to compare values. These operators (`>`, `<
 
 ## Arrays
 
-Arrays in C++ are very different from arrays in Python. An array in C++ is a **pointer** to a contiguous block of memory. Pointers will be discussed more in Section 09: Pointers. One result from this is that arrays in C++ cannot be resized once made (as the memory before and after the block might be in use). Techniques will be discussed later on how to get around this, but for now arrays are static. Arrays can be made similar to other variables. the `[]` operator can be used to index an array.
+Arrays in C++ are very different from arrays in Python. An array in C++ is a **pointer** to a contiguous block of memory. Pointers will be discussed more in Section 09: Pointers, but one result from this is that arrays in C++ cannot be resized once made (as the memory before and after the block might be in use). Techniques will be discussed later on how to get around this, but for now arrays are considered static. Arrays can be made similar to other variables. the `[]` operator can be used to index an array.
 
 ```C++
 int numArray[4]{5, 9, 12, 7}; // 4 * 4 = 16 bytes of memory
@@ -160,6 +160,26 @@ While C++ is a strongly typed language, it does support some type conversions. F
 
 ```C++
 (char) num; // int cast as char
+```
+
+## Type Aliases
+
+**Type aliases** are a way for the programmer to give their own names to already existing types. One common example of this is `size_t` which is (on most systems) and alias of `long unsigned int`. `size_t` is often used to store the size of objects in C++. To define an alias, give the desired name as well as its type definition (in a `using` command).
+
+```C++
+using myInt = unsigned int;
+```
+
+```C++
+myInt num = 1;
+```
+
+## `NULL`
+
+`NULL` is a "special" value in C++ that evaluates to 0. The programmer is free to use this value as they desire, but many advise against it.
+
+```C++
+int num = NULL;
 ```
 
 ## Example Program

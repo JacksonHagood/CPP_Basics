@@ -1,6 +1,6 @@
 # Strings
 
-Lists of characters, or **strings**, are a very common data type in programming. C++ has two main ways of handling strings: C-style strings (or "c-strings") and C++ style strings. C++ strings are typically easier to use, but C-strings are used by many C functions and system calls. 
+Lists of characters, or **strings**, are a very common data type in programming. C++ has two main ways of handling strings: C-style strings (or "C-strings") and C++ style strings. C++ strings are typically easier to use, but C-strings are used by many C functions and system calls. 
 
 ## Characters
 
@@ -26,18 +26,18 @@ C++ has several special characters to support unique situations. For example, to
 | `'\''` | single quote |
 | `'\"'` | double quote |
 | `'\\'` | backslash    |
-
+| `'\b'` | backspace    |
 
 ## C-strings
 
-**C-strings** are a built-in method of defining strings in C as an array of characters. As arrays in C++ do not have an automatic size property, the end of a C-string is denoted by a null character (`\0`). The end of the C-string is not necessarily the end of the array, but it can never exceed it. For example, the below c-string stores `"Hello"` in the first 5 indexes. The end of the c-string is then indicated by the null character in index 5. The last 4 indexes are therefore not part of the c-string, as they are part of the null character. This can be demonstrated by outputting the c-string which does not show any of the characters after `"Hello"`.
+**C-strings** are a built-in method of defining strings in C as an array of characters. As arrays in C++ do not have an internal size property (as they are not objects), the end of a C-string is denoted by a null character (`'\0'`). The end of the C-string is not necessarily the end of the array, but it can never exceed it. For example, the below C-string stores `"Hello"` in the first 5 indexes. The end of the C-string is then indicated by the null character in index 5. The last 4 indexes are therefore not part of the C-string, as they are past the null character. This can be demonstrated by outputting the C-string which does not show any of the characters after `"Hello"`.
 
 ```C++
 char array[10] = {'H', 'e', 'l', 'l', 'o', '\0', '-', '-', '-', '-'};
 cout << array; // outputs "Hello"
 ```
 
-Interestingly, when outputting the character array, C++ outputs the c-string instead of the address of the array (which would happen when outputting an array of any other type). This is because support for c-strings is built into the language itself. Even with this support, however, there is little that can be done with c-strings with plain C++. To do things like concatenate c-strings, the programmer must write their own functions or use a library. One built-in library is `string.h`. `string.h` provides functions such as `strcpy()`, `strlen()`, and `strcmp()` to help the use of c-strings.
+Interestingly, when outputting the character array, C++ outputs the C-string instead of the address of the array (which would happen when outputting an array of any other type). This is because support for C-strings is built into the language itself. Even with this support, however, there is little that can be done with C-strings with plain C++. To do things like concatenate C-strings, the programmer must write their own functions or use a library. One built-in library is `string.h`. `string.h` provides functions such as `strcpy()`, `strlen()`, and `strcmp()` to help the use of C-strings.
 
 ```C++
 # include <string.h>
@@ -47,11 +47,13 @@ Interestingly, when outputting the character array, C++ outputs the c-string ins
 int size = strlen(array); // gets the size of c-string array
 ```
 
+Crucial to using C-strings is ensuring a null character is always present. Without a null character somewhere in the character array, segmentation faults can easily occur.
+
 ## C++ Strings
 
 > Note: object-oriented programming is covered in Section 13: Classes.
 
-C++ strings are objects that most closely mirror strings in Python. Unlike c-strings, the programmer is no longer in charge of maintaining the actual character array, and can instead use several member functions. For example, to get the size of a string, one could use the `.size()` functions. As strings are objects, to use their member functions are used by giving the variable name followed by `.` and the function call. To use C++ style strings, they must first be included.
+C++ strings are objects that closely mirror strings in Python. Unlike C-strings, the programmer is no longer in charge of maintaining the actual character array, and can instead use several member functions and operators. For example, to get the size of a string, one could use the `.size()` member function. As strings are objects, their member functions are called by giving the variable name followed by `.` and the function call. To use C++ style strings, they must first be included.
 
 ```C++
 # include <string>
@@ -74,7 +76,7 @@ str.at(1) // gets character at index 1
 str[1] // gets character at index 1
 ```
 
-To get the first and last characters in a string, the `.front()` and `.back()` functions can be used. Finally, to get a sequence of characters within the string, the `.substr()` function can be called with a starting position and the number of characters to obtain.
+To get the first and last characters in a string, the `.front()` and `.back()` functions can be used. To get a sequence of characters within the string, the `.substr()` function can be called with a starting position and the number of characters to obtain.
 
 ```C++
 str.front(); // gets first character
