@@ -30,17 +30,15 @@ This repository consists of 14 folders that go through the basics of C++. This i
 
 ## Appendix
 
-- [Python Review](Appendix/python.md)
-- [Linux](Appendix/linux.md)
-- [Makefiles](Appendix/make.md)
-- [Git](Appendix/git.md)
 - [C](Appendix/c.md)
 - [File Types](Appendix/file_types.md)
+- [Makefiles](Appendix/make.md)
+- [Linux](Appendix/linux.md)
+- [Git](Appendix/git.md)
+- [Python Review](Appendix/python.md)
 
 ## Currently Under Construction TODO:
-- Variables: NULL
-- Linked lists: operations
-- Appendix: Python Review
-- Appendix: Git
-- Appendix: Namespaces
 - Flow Control: Iterators
+- Appendix: Namespaces
+- Appendix: Git
+- Appendix: Python Review

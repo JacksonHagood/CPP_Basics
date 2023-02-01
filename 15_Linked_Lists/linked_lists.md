@@ -50,6 +50,27 @@ for (Node* curr = head; curr != nullptr; curr = curr->next) {
 }
 ```
 
+### Operations
+
+Typically linked lists come packaged with some functions and operations to work on them. It is the designer's job to implement these functions in a way that the linked list is maintained (can be traversed from beginning to end) and there are no memory leaks. Below is a table of some typical functions.
+
+| operation       | description           |
+| --------------- | --------------------- |
+| `LinkedList()`  | copy constructor      |
+| `operator=()`   | copy assignment       |
+| `~LinkedList()` | destructor            |
+| `at()`          | get at index          |
+| `front()`       | get at first index    |
+| `back()`        | get at last index     |
+| `insert()`      | add at index          |
+| `pushFront()`   | add at first index    |
+| `pushBack()`    | add at last index     |
+| `remove()`      | delete at index       |
+| `popFront()`    | delete at first index |
+| `popBack()`     | delete at last index  |
+
+The intention with these is that a programmer using the linked list object (likely a class) does not have to worry about traversing the linked list for every addition, removal, etc. Instead, they can make use of object oriented programming and let the member functions handle this.
+
 ## Example Program
 
 An example program is provided to demonstrate this material.
