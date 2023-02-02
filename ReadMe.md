@@ -39,6 +39,5 @@ This repository consists of 14 folders that go through the basics of C++. This i
 
 ## Currently Under Construction TODO:
 - Flow Control: Iterators
-- Appendix: Namespaces
 - Appendix: Git
 - Appendix: Python Review
