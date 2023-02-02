@@ -10,10 +10,10 @@ Structs are the most primitive way of implementing object-oriented programming. 
 struct Person {
     string name;
     int age;
-}
+};
 ```
 
-Notice how each component of the struct is indicated with a type and identifier. The programmer can now declare instances of this person struct. To obtain the component, they simply type the instance's identifier followed by the identifier of what they want.
+Notice how each component of the struct is indicated with a type and identifier. The programmer can now declare instances of this person struct. To obtain the component, they simply type the instance's identifier followed by the identifier of what they want. By default, each element in a struct is public and structs can also have member functions. These functionalities are best explained with classes.
 
 ## Classes
 
