@@ -1,7 +1,6 @@
 # include "../Appendix/helper.h"
 # include "address.h"
 # include "ticket.h"
-# include "math.h"
 
 int main() {
     outputHeading("Classes");
@@ -48,19 +47,6 @@ int main() {
         cout << "Ticket 4: " << t4->getNum() << '\n';
 
         delete t4;
-    }
-
-    promptInput();
-    outputHeading("Namespaces");
-
-    {
-        // outside the math namespace
-        
-        math::integer num = 3;
-        math::integer exp = 5;
-
-        cout << num << " ^ " << exp << " = " << math::power(num, exp) << '\n';
-        cout << num << "! = " << math::factorial(num) << '\n';
     }
 
     promptInput();

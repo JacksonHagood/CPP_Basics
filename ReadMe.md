@@ -11,22 +11,25 @@ This repository consists of 14 folders that go through the basics of C++. This i
     - [02: Variables](02_Variables/variables.md)
     - [03: Flow Control](03_Flow_Control/flow_control.md)
     - [04: Functions](04_Functions/functions.md)
+    - [05: Namespaces](05_Namespaces/namespaces.md)
+    - [06: Templates](06_Templates/templates.md)
 - Debugging & Exceptions
-    - [05: Errors](05_Errors/errors.md)
-    - [06: Exceptions](06_Exceptions/exceptions.md)
-    - [07: Testing](07_Testing/testing.md)
+    - [07: Errors](07_Errors/errors.md)
+    - [08: Exceptions](08_Exceptions/exceptions.md)
+    - [09: Testing](09_Testing/testing.md)
 - Objects
-    - [08: Strings](08_Strings/strings.md)
-    - [09: Streams](09_Streams/streams.md)
+    - [10: Strings](10_Strings/strings.md)
+    - [11: Streams](11_Streams/streams.md)
+    - [12: Vectors](12_Vectors/vectors.md)
 - Memory
-    - [10: Pointers](10_Pointers/pointers.md)
-    - [11: The Heap](11_The_Heap/heap.md)
-    - [12: Dynamic Arrays](12_Dynamic_Arrays/dynamic_arrays.md)
-- Object-oriented programming
-    - [13: Classes](13_Classes/classes.md)
-    - [14: Rule of Three](14_Rule_of_Three/rule_of_three.md)
+    - [13: Pointers](13_Pointers/pointers.md)
+    - [14: The Heap](14_The_Heap/heap.md)
+    - [15: Dynamic Arrays](15_Dynamic_Arrays/dynamic_arrays.md)
+- Object-oriented Programming
+    - [16: Classes](16_Classes/classes.md)
+    - [17: Rule of Three](17_Rule_of_Three/rule_of_three.md)
 - Abstract Data Types
-    - [15: Linked Lists](15_Linked_Lists/linked_lists.md)
+    - [18: Linked Lists](18_Linked_Lists/linked_lists.md)
 
 ## Appendix
 
@@ -39,6 +42,9 @@ This repository consists of 14 folders that go through the basics of C++. This i
 
 ## Currently Under Construction TODO:
 
+- Section 05: Namespaces
+- Section 06: Templates
+- Section 12: Vectors
 - Classes: inheretence
 - Classes: templates
 - Flow Control: Iterators
