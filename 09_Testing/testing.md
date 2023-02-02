@@ -39,8 +39,3 @@ An example program is provided to demonstrate this material.
 - compile: `make`
 - run: `./testing.exe`
 - cleanup: `make clean`
-
-## Sources and Further Material
-
-- [CPP Reference](https://en.cppreference.com/)
-- [CPP](https://www.cplusplus.com/doc/)

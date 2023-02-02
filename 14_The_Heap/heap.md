@@ -61,7 +61,7 @@ An example program is provided to demonstrate this material.
 - run: `./heap.exe`
 - cleanup: `make clean`
 
-## References
+## Sources and Further Material
 
-- [CPP Reference](https://en.cppreference.com/)
-- [CPP](https://www.cplusplus.com/doc/)
+- [CPP Reference](https://en.cppreference.com/w/cpp/language/new)
+- [CPP](https://cplusplus.com/reference/new/)

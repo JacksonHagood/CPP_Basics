@@ -139,6 +139,6 @@ int main() {
 }
 ```
 
-## References
+## Sources and Further Material
 
 - [C documentation from CPP Reference](https://en.cppreference.com/w/c/language)

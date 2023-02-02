@@ -235,7 +235,7 @@ An example program is provided to demonstrate this material.
 - run: `./classes.exe`
 - cleanup: `make clean`
 
-## References
+## Sources and Further Material
 
-- [CPP Reference](https://en.cppreference.com/)
-- [CPP](https://www.cplusplus.com/doc/)
+- [CPP Reference](https://en.cppreference.com/w/cpp/language/classes)
+- [CPP](https://cplusplus.com/doc/tutorial/classes/)

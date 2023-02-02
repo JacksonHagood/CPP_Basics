@@ -119,5 +119,5 @@ An example program is provided to demonstrate this material.
 
 ## Sources and Further Material
 
-- [CPP Reference](https://en.cppreference.com/)
-- [CPP](https://www.cplusplus.com/doc/)
+- [CPP Reference](https://en.cppreference.com/w/cpp/io)
+- [CPP](https://cplusplus.com/reference/iolibrary/)

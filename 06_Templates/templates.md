@@ -38,3 +38,17 @@ For example, if an integer and float were passed to `sum()`, type `A` would be f
 // calls sum() with "A" defined as int and "B" defined as float
 sum(num1, num2);
 ```
+
+## Example Program
+
+An example program is provided to demonstrate this material.
+
+### Usage
+- compile: `make`
+- run: `./templates.exe`
+- cleanup: `make clean`
+
+## Sources and Further Material
+
+- [CPP Reference](https://en.cppreference.com/w/cpp/language/templates)
+- [CPP](https://cplusplus.com/doc/oldtutorial/templates/)

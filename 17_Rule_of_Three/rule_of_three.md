@@ -119,8 +119,3 @@ An example program is provided to demonstrate this material.
 - compile: `make`
 - run: `./rule_of_three.exe`
 - cleanup: `make clean`
-
-## References
-
-- [CPP Reference](https://en.cppreference.com/)
-- [CPP](https://www.cplusplus.com/doc/)

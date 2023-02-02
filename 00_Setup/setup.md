@@ -54,5 +54,6 @@ An example program is provided to demonstrate this material.
 
 ## Sources and Further Material
 
+- [g++](https://gcc.gnu.org/)
 - [CPP Reference](https://en.cppreference.com/)
 - [CPP](https://www.cplusplus.com/doc/)

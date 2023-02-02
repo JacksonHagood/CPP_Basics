@@ -89,5 +89,5 @@ An example program is provided to demonstrate this material.
 
 ## Sources and Further Material
 
-- [CPP Reference](https://en.cppreference.com/)
-- [CPP](https://www.cplusplus.com/doc/)
+- [CPP Reference](https://en.cppreference.com/book/pointers)
+- [CPP](https://cplusplus.com/doc/tutorial/pointers/)

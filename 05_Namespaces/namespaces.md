@@ -45,7 +45,7 @@ An example program is provided to demonstrate this material.
 - run: `./namespaces.exe`
 - cleanup: `make clean`
 
-## References
+## Sources and Further Material
 
 - [CPP Reference](https://en.cppreference.com/w/cpp/language/namespace)
 - [CPP](https://cplusplus.com/doc/oldtutorial/namespaces/)
