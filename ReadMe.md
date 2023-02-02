@@ -38,6 +38,9 @@ This repository consists of 14 folders that go through the basics of C++. This i
 - [Python Review](Appendix/python.md)
 
 ## Currently Under Construction TODO:
+
+- Classes: inheretence
+- Classes: templates
 - Flow Control: Iterators
 - Appendix: Git
 - Appendix: Python Review

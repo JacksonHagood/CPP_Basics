@@ -23,6 +23,27 @@ void pass_by_pointer(int* ptr) {
     *ptr = 1;
 }
 
+int recursive_factorial(int num) {
+    if (num > 1) {
+        // recursive call
+        return num * recursive_factorial(num - 1);
+    }
+
+    // base case
+    return num;
+}
+
+int iterative_factorial(int num) {
+    // additional variable
+    int result = 1;
+
+    for (int i = 2; i <= num; i++) {
+        result *= i;
+    }
+
+    return result;
+}
+
 int main() {
     outputHeading("Passing Parameters");
 
@@ -51,6 +72,14 @@ int main() {
         cout << "Number 1 after function (pass by value): " << num1 << '\n';
         cout << "Number 2 after function (pass by reference): " << num2 << '\n';
         cout << "Number 3 after function (pass by pointer): " << num3 << '\n';
+    }
+
+    promptInput();
+    outputHeading("Recursion");
+
+    {
+        cout << "5!: " << recursive_factorial(5) << '\n';
+        cout << "5!: " << iterative_factorial(5) << '\n';
     }
 
     promptInput();

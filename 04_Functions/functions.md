@@ -89,6 +89,37 @@ void pass_as_const(const int num) {
 }
 ```
 
+## Recursion
+
+**Recursive** functions are functions that call themselves. Often, problems in C++ can be solved with recursion in a conceptually more intuitive way. To avoid infinite recursion, there must be a base case (some scenario where the function is no longer recursively called). As an example, a factorial function could be defined recursively as follows.
+
+```C++
+int recursive_factorial(int num) {
+    if (num > 1) {
+        // recursive call
+        return num * recursive_factorial(num - 1);
+    }
+
+    // base case
+    return num;
+}
+```
+
+Though recursion can be useful, every recursive function can be defined iteratively (sometimes with the addition of a variable). Recursion has several downsides due to additional function calls requiring more memory and runtime. Therefore, for the best performance, iterative implementations are usually best.
+
+```C++
+int iterative_factorial(int num) {
+    // additional variable
+    int result = 1;
+
+    for (int i = 2; i <= num; i++) {
+        result *= i;
+    }
+
+    return result;
+}
+```
+
 ## Example Program
 
 An example program is provided to demonstrate this material.

@@ -14,6 +14,8 @@ Header files are typically used for class definitions, function prototypes, and 
 # include "functions.h"
 ```
 
+### Header Guards
+
 One important component of header files are header guards. These help avoid errors when the same header files is included multiple times.
 
 ```C++
