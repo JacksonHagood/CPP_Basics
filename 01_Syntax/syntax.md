@@ -65,7 +65,7 @@ The `#include` command allows the inclusion of external (from this program) C++ 
 
 ### Namespaces
 
-> Note: namespaces are covered in more detail in [05: Namespaces](05_Namespaces/namespaces.md)
+> Note: namespaces are covered in more detail in [05: Namespaces](05_Namespaces/namespaces.md).
 
 Often when including header files, imported functions and objects are within a **namespace**. This means in order to use them, the namespace must be given before any identifiers. For example, to use `cout` as a part of `iostream`, the `std` namespace must be given. The `::` operator is used to denote a namespace.
 
@@ -101,7 +101,7 @@ int main() {
 
 ### `cout` and `cin`
 
-> Note: streams are covered more in depth in Section 09: Streams.
+> Note: streams are covered more in depth in [11: Streams](11_Streams/streams.md).
 
 Finally, with `iostream` imported and its namespace available, the programmer can implement basic program input and output. `cout` is the standard output stream in C++. In other words, this "stream" object is the target for whenever the programmer wishes to output something (usually to a terminal). Data is output to `cout` using the `<<` operator. Values as well as variables can be used with `cout`. If the user wishes to move to the next line, they can use the `endl` command (as part of the standard namespace).
 

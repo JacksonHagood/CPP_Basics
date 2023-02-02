@@ -42,8 +42,6 @@ This repository consists of 14 folders that go through the basics of C++. This i
 
 ## Currently Under Construction TODO:
 
-- Section 05: Namespaces
-- Section 06: Templates
 - Section 12: Vectors
 - Classes: inheretence
 - Classes: templates
