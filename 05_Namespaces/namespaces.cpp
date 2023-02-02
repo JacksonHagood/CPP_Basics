@@ -7,6 +7,7 @@ int main() {
     {
         // outside the math namespace
         
+        // math:: prefix must be given to access parts of a namespace
         math::integer num = 3;
         math::integer exp = 5;
 

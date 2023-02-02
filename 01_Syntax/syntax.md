@@ -65,7 +65,7 @@ The `#include` command allows the inclusion of external (from this program) C++ 
 
 ### Namespaces
 
-> Note: namespaces are not covered in detail here, only enough for use starting out is covered.
+> Note: namespaces are covered in more detail in [05: Namespaces](05_Namespaces/namespaces.md)
 
 Often when including header files, imported functions and objects are within a **namespace**. This means in order to use them, the namespace must be given before any identifiers. For example, to use `cout` as a part of `iostream`, the `std` namespace must be given. The `::` operator is used to denote a namespace.
 
