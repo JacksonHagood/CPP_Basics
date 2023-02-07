@@ -23,6 +23,16 @@ With an instance of the vector class, a wide variety of member functions are now
 nums.push_back(4);
 ```
 
+## Iteration
+
+One useful way to iterate through vectors is with a for each loop. These structures were introduced in later versions of C++ and also work with other classes like strings. There are still some cases were traditional for loops are preferable (or needed), but for each loops are an easy way to iterate.
+
+```C++
+for (int num : nums) {
+    cout << num;
+}
+```
+
 ## Sources and Further Material
 
 - [CPP Reference](https://en.cppreference.com/w/cpp/container/vector)

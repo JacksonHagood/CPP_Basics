@@ -42,7 +42,6 @@ This repository consists of 14 folders that go through the basics of C++. This i
 
 ## Currently Under Construction TODO:
 
-- Section 12: Vectors
 - Classes: inheretence
 - Classes: templates
 - Flow Control: Iterators
