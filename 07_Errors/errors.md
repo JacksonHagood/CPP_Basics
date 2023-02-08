@@ -83,7 +83,7 @@ main.cpp:4:15: runtime error: division by zero
 
 ## Logical Errors
 
-> Note: memory leaks are discussed in Section 11: The Heap
+> Note: memory leaks are discussed in [14: The Heap](../14_The_Heap/heap.md)
 
 The final category of errors are logical errors. **Logical errors** are not "real" errors as they do not prevent the compilation or execution of a C++ program. Instead, logical errors are discrepancies between what the programmer intends to occur and what they actually programmed. These are typically the hardest errors to debug as the compiler has no real sense of when they occur. One example of a logical error the programmer expecting `5 / 2` to result in `2.5`, but instead get `2` as they forgot about integer division.
 

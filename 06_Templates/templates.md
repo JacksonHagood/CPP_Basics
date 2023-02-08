@@ -1,7 +1,5 @@
 # Templates
 
-> Note: class templates are discussed in [16: Classes](16_Classes/classes.md).
-
 **Templates** allow for generic types to be given for function and class definitions. This allows for these definitions to work for any compatible type instead of just a single one.
 
 ## Function Templates

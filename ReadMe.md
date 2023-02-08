@@ -1,4 +1,4 @@
-# C++ Basics
+# C++ Basics **Version 1.0**
 
 This repository consists of 14 folders that go through the basics of C++. This is intended for those with basic programming knowledge in Python as they learn C++. Any references are provided but these programs and documents are my own. This content works best as supplementary material alongside a course in C++. Consult the Appendix for review and futher material.
 
@@ -37,13 +37,3 @@ This repository consists of 14 folders that go through the basics of C++. This i
 - [File Types](Appendix/file_types.md)
 - [Makefiles](Appendix/make.md)
 - [Linux](Appendix/linux.md)
-- [Git](Appendix/git.md)
-- [Python Review](Appendix/python.md)
-
-## Currently Under Construction TODO:
-
-- Classes: inheretence
-- Classes: templates
-- Flow Control: Iterators
-- Appendix: Git
-- Appendix: Python Review

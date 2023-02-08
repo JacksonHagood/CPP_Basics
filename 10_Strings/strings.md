@@ -37,7 +37,7 @@ char array[10] = {'H', 'e', 'l', 'l', 'o', '\0', '-', '-', '-', '-'};
 cout << array; // outputs "Hello"
 ```
 
-Interestingly, when outputting the character array, C++ outputs the C-string instead of the address of the array (which would happen when outputting an array of any other type). This is because support for C-strings is built into the language itself. Even with this support, however, there is little that can be done with C-strings with plain C++. To do things like concatenate C-strings, the programmer must write their own functions or use a library. One built-in library is `string.h`. `string.h` provides functions such as `strcpy()`, `strlen()`, and `strcmp()` to help the use of C-strings.
+Interestingly, when outputting the character array, C++ outputs the C-string instead of the address of the array (which would happen when outputting an array of any other type). This is because support for C-strings is built into the language itself. Even with this support, however, there is little that can be done with C-strings with plain C++. To do things like concatenate C-strings, the programmer must write their own functions or use a library. ~~One built-in library is `string.h`. `string.h` provides functions such as `strcpy()`, `strlen()`, and `strcmp()` to help the use of C-strings.~~
 
 ```C++
 # include <string.h>
