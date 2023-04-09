@@ -17,7 +17,7 @@ This repository consists of 14 folders that go through the basics of C++. This i
     - [07: Errors](07_Errors/errors.md)
     - [08: Exceptions](08_Exceptions/exceptions.md)
     - [09: Testing](09_Testing/testing.md)
-- Objects
+- Useful Classes
     - [10: Strings](10_Strings/strings.md)
     - [11: Streams](11_Streams/streams.md)
     - [12: Vectors](12_Vectors/vectors.md)
@@ -37,3 +37,4 @@ This repository consists of 14 folders that go through the basics of C++. This i
 - [File Types](Appendix/file_types.md)
 - [Makefiles](Appendix/make.md)
 - [Linux](Appendix/linux.md)
+- [The Standard Library](Appendix/std.md)
