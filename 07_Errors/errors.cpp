@@ -21,7 +21,7 @@ int main() {
     }
 
     promptInput();
-    outputHeading("Syntax Errors");
+    outputHeading("Runtime Errors");
 
     {
         int nums[3] = {0, 1, 2};
@@ -34,7 +34,7 @@ int main() {
     }
 
     promptInput();
-    outputHeading("Syntax Errors");
+    outputHeading("Logical Errors");
 
     {
         // logical error due to integer division

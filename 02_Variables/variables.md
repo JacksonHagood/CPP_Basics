@@ -48,7 +48,7 @@ float floating = 0.1;
 
 ### Size
 
-Each type in C++ has an associated size (in bytes) that cannot be altered. For example, a standard integer (`int`) takes up 4 bytes (32 bits) of memory. If the programmer wishes to have an integer with a different size, they can use the **short** and **long** keywords. For a 1 byte integer, the `char` type can be used as characters are represented as 1 byte numbers in ASCII. Depending on the operating system, the size of types can vary slightly. If the programmer wants an integer that can only be positive (or 0) they can use the **unsigned** keyword. To get the size of a type, the programmer can use the `sizeof()` function.
+Each type in C++ has an associated size (in bytes) that cannot be altered. For example, a standard integer (`int`) takes up 4 bytes (32 bits) of memory. If the programmer wishes to have an integer with a different size, they can use the **short** and **long** keywords. For a 1 byte integer, the `char` type can be used as characters are represented as 1 byte numbers in ASCII. Depending on the operating system, the size of types can vary. To get around this, programmers can use integer types that specify their size in bits (such as `int32_t`). If the programmer wants an integer that can only be positive (or 0) they can use the **unsigned** keyword. To get the size of a type, the programmer can use the `sizeof()` function.
 
 ```C++
 char num1; // 1 byte

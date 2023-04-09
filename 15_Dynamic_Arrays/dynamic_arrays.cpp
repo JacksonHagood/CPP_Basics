@@ -13,23 +13,24 @@ int main() {
             cout << "Index " << i << ": " << array[i] << '\n';
         }
 
-        // want to resize array to have room for six elements
+        /* resize an array */ {
+            // step 1: allocate memory for new array (on the heap)
+            int* newArray = new int[4];
 
-        // step 1: allocate memory for new array (on the heap)
-        int* newArray = new int[4];
+            // step 2: copy values from old array to new array
+            for (unsigned int i = 0; i < 3; i++) {
+                newArray[i] = array[i];
+            }
 
-        // step 2: copy values from old array to new array
-        for (unsigned int i = 0; i < 3; i++) {
-            newArray[i] = array[i];
+            newArray[3] = 3;
+
+            // step 3: deallocate memory of old array
+            delete[] array;
+
+            // step 4: update array pointer to new array
+            array = newArray;
         }
-
-        newArray[3] = 3;
-
-        // step 3: deallocate memory of old array
-        delete[] array;
-
-        // step 4: update array pointer to new array
-        array = newArray;
+        
 
         cout << "\nArray address: " << array << '\n';
 
