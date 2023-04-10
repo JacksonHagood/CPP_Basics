@@ -112,7 +112,7 @@ Address addr2("Administration Building", "400 Bizzell St", "", "College Station"
 
 ### Getters & Setters
 
-The next categories of member functions are the **getters** and **setters** these are typically one line functions used to obtain and set the value of member variables (as they are private and cannot be directly accessed). Notice that the getter functions have the `const` keyword after the function identifier and parameters. This makes what is know as a constant member function. **Constant member functions** are member functions that do not change any of the member variables in a class. For example, it would be a compile-time error to change the `name` member variable in the `getName()` member function as it is `const`.
+The next categories of member functions are the **getters** and **setters**. These are typically one line functions used to obtain and set the value of member variables (as they are private and cannot be directly accessed). Notice that the getter functions have the `const` keyword after the function identifier and parameters. This makes what is know as a constant member function. **Constant member functions** are member functions that do not change any of the member variables in a class. For example, it would be a compile-time error to change the `name` member variable in the `getName()` member function as it is `const`.
 
 ```C++
 // getter functions

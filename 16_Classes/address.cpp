@@ -1,5 +1,7 @@
 # include "address.h"
 
+using std::cout, std::string;
+
 // function definitions for address class
 
 // default constructor

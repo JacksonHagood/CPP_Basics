@@ -3,7 +3,7 @@
 
 # include <iostream>
 # include <string>
-using std::cout, std::cin, std::string;
+using std::cout, std::cin, std::string; // usually not a good idea to have using statements in a header file
 
 const unsigned char screenWidth = 50;
 

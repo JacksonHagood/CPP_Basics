@@ -27,9 +27,10 @@ This repository consists of 14 folders that go through the basics of C++. This i
     - [15: Dynamic Arrays](15_Dynamic_Arrays/dynamic_arrays.md)
 - Object-oriented Programming
     - [16: Classes](16_Classes/classes.md)
-    - [17: Rule of Three](17_Rule_of_Three/rule_of_three.md)
+    - [17: Inheritance](17_Classes/Inheritance.md)
+    - [18: Rule of Three](18_Rule_of_Three/rule_of_three.md)
 - Abstract Data Types
-    - [18: Linked Lists](18_Linked_Lists/linked_lists.md)
+    - [19: Linked Lists](19_Linked_Lists/linked_lists.md)
 
 ## Appendix
 

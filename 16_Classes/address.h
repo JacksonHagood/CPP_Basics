@@ -1,48 +1,47 @@
-# include <iostream>
-# include <string>
-using std::string, std::cout;
-
 # ifndef ADDRESS_H
 # define ADDRESS_H
+
+# include <iostream>
+# include <string>
 
 class Address {
     private:
         // private components: member variables
-        string name;
-        string line_one;
-        string line_two;
-        string city;
-        string state;
+        std::string name;
+        std::string line_one;
+        std::string line_two;
+        std::string city;
+        std::string state;
         int zip_code;
-        string country;
+        std::string country;
 
     public:
         // public components: member functions
 
         // constructors
         Address();
-        Address(const string NAME, const string LINE_ONE, const string LINE_TWO, const string CITY, const string STATE, const int ZIP_CODE, const string COUNTRY);
+        Address(const std::string NAME, const std::string LINE_ONE, const std::string LINE_TWO, const std::string CITY, const std::string STATE, const int ZIP_CODE, const std::string COUNTRY);
 
         // getter functions
-        string getName() const;
-        string getLineOne() const;
-        string getLineTwo() const;
-        string getCity() const;
-        string getState() const;
+        std::string getName() const;
+        std::string getLineOne() const;
+        std::string getLineTwo() const;
+        std::string getCity() const;
+        std::string getState() const;
         int getZipCode() const;
-        string getCountry() const;
+        std::string getCountry() const;
 
         // setter functions
-        void setName(const string NAME);
-        void setLineOne(const string LINE_ONE);
-        void setLineTwo(const string LINE_TWO);
-        void setCity(const string CITY);
-        void setState(const string STATE);
+        void setName(const std::string NAME);
+        void setLineOne(const std::string LINE_ONE);
+        void setLineTwo(const std::string LINE_TWO);
+        void setCity(const std::string CITY);
+        void setState(const std::string STATE);
         void setZipCode(const int ZIP_CODE);
-        void setCountry(const string COUNTRY);
+        void setCountry(const std::string COUNTRY);
 
         // other functions / operations
-        string toString() const;
+        std::string toString() const;
         friend std::ostream& operator<<(std::ostream& os, const Address& in);
 };
 
