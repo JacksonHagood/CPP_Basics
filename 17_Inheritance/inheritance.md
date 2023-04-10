@@ -93,3 +93,13 @@ class SoftwareEngineer : public Engineer { // software engineer derives engineer
 ```C++
 SoftwareEngineer jackson("Jackson Hagood", 21, "Front-end Developer", "JavaScript, React, Redux");
 ```
+
+Inheritance can lead to complex trees of relationships between classes. For example, the following is the hierarchy for the stream classes.
+
+```
+                              ios
+                 ┌─────────────┴─────────────┐
+              istream                     ostream
+   ┌────────────┤ └────────────┬────────────┘ ├────────────┐ 
+ifstream   istringstream    iostream   ostringstream    ofstream
+```
