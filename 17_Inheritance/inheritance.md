@@ -94,6 +94,8 @@ class SoftwareEngineer : public Engineer { // software engineer derives engineer
 SoftwareEngineer jackson("Jackson Hagood", 21, "Front-end Developer", "JavaScript, React, Redux");
 ```
 
+### Class Hierarchies
+
 Inheritance can lead to complex trees of relationships between classes. For example, the following is the hierarchy for the stream classes.
 
 ```

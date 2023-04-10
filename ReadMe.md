@@ -1,6 +1,6 @@
 # C++ Basics **Version 1.0**
 
-This repository consists of 14 folders that go through the basics of C++. This is intended for those with basic programming knowledge in Python as they learn C++. Any references are provided but these programs and documents are my own. This content works best as supplementary material alongside a course in C++. Consult the Appendix for review and futher material.
+This repository consists of 19 sections that go through the basics of C++. This is intended for those with basic programming knowledge in Python as they learn C++. Any references are provided but these programs and documents are my own. This content works best as supplementary material alongside a synchronous course in C++. Consult the Appendix for review and futher material.
 
 ## Sections
 
