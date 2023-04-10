@@ -18,7 +18,7 @@ class Ticket {
         Ticket* getAddress() { return this; }
 
         // static member functions
-        static unsigned int  getSold() { return count; }
+        static unsigned int getSold() { return count; }
 };
 
 unsigned int Ticket::count = 0;

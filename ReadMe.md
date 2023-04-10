@@ -11,7 +11,7 @@ This repository consists of 19 sections that go through the basics of C++. This 
     - [02: Variables](02_Variables/variables.md)
     - [03: Flow Control](03_Flow_Control/flow_control.md)
     - [04: Functions](04_Functions/functions.md)
-    - [05: Namespaces](05_Namespaces/namespaces.md)
+    - [05: Structures](05_Structures/structures.md)
     - [06: Templates](06_Templates/templates.md)
 - Debugging & Exceptions
     - [07: Errors](07_Errors/errors.md)

@@ -105,3 +105,17 @@ Inheritance can lead to complex trees of relationships between classes. For exam
    ┌────────────┤ └────────────┬────────────┘ ├────────────┐ 
 ifstream   istringstream    iostream   ostringstream    ofstream
 ```
+
+## Example Program
+
+An example program is provided to demonstrate this material.
+
+### Usage
+- compile: `make`
+- run: `./inheritance.exe`
+- cleanup: `make clean`
+
+## Sources and Further Material
+
+- [CPP Reference](https://en.cppreference.com/w/cpp/language/derived_class)
+- [CPP](https://cplusplus.com/doc/tutorial/inheritance/)

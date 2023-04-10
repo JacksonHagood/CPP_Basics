@@ -2,19 +2,6 @@
 
 As programs grow in complexity, additional layers of abstraction can be useful. One way to consolidate programs into manageable units is using object-oriented programming. What is important to realize is that object-oriented programming, unlike more primitive components (like variables and flow control), is not central to solving any problem. Object-oriented programming is only a tool, and there can be detrimental ways to use this tool. Furthermore, any problem can be solved without object-oriented programming. Programmers should learn object-oriented programming and grow comfortable with it, but it is counter-productive to become so reliant on it that one cannot program without it.
 
-## Structs
-
-Structs are the most primitive way of implementing object-oriented programming. While they can be used to the same extent as classes, they are most often used to just combine multiple data fields into a single structure. For example, if the programmer wanted a container to store the information of a person, they could define the following struct.
-
-```C++
-struct Person {
-    string name;
-    int age;
-};
-```
-
-Notice how each component of the struct is indicated with a type and identifier. The programmer can now declare instances of this person struct. To obtain the component, they simply type the instance's identifier followed by the identifier of what they want. By default, each element in a struct is public and structs can also have member functions. These functionalities are best explained with classes.
-
 ## Classes
 
 The single most important addition C++ adds to the C programming language is **classes**, the main method of object-oriented programming. Classes are containers for the programmer to consolidate data in the same place as operations on that data. These **objects** are useful as they allow the programmer to make instances that call these operations, reducing the complexity of many programs. An example class for addresses is given below.
@@ -225,6 +212,19 @@ The `->` operator is another way to do this. This special dereference operator i
 ```C++
 t4->getNum(); // dereference and get member
 ```
+
+## Structs
+
+Structs are the most primitive way of implementing object-oriented programming. While they can be used to the same extent as classes, they are most often used to just combine multiple data fields into a single structure. For example, if the programmer wanted a container to store the information of a person, they could define the following struct.
+
+```C++
+struct Person {
+    string name;
+    int age;
+};
+```
+
+Notice how each component of the struct is indicated with a type and identifier. The programmer can now declare instances of this person struct. To obtain the component, they simply type the instance's identifier followed by the identifier of what they want. By default, each element in a struct is public and structs can also have member functions. These functionalities are best explained with classes.
 
 ## Example Program
 

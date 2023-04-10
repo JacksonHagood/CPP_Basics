@@ -1,6 +1,6 @@
 # The Standard Library
 
-C++ provides a library of header files that provide some useful functions, objects, and constants. A complete list of these libraries can be found on the [refrence website](https://en.cppreference.com/w/cpp/header). Many of these headers have C-equivalents that can provide similiar functionality.
+C++ provides a library of header files that provide some useful functions, objects, and constants. A complete list of these libraries can be found on the [refrence website](https://en.cppreference.com/w/cpp/header). Some of these headers have C-equivalents that can provide similiar functionality.
 
 ## Common Headers
 
@@ -16,9 +16,9 @@ Below is a list of a few commonly used, and useful, header files.
 | `stdexcept` | exception types       | `out_of_range`, `invalid_argument`, `runtime_error` |
 | `atomic`    | concurrency utilities | `atomic`                                            |
 | `thread`    | thread class          | `thread`                                            |
-| `iostream`  | standard I/O          | `cin`, `cout`, `cerr`                               |
-| `fstream`   | file I/O              | `ifstream`, `ofstream`                              |
-| `sstream`   | string I/O            | `istringstream`, `ostringstream`                    |
+| `iostream`  | standard i/o          | `cin`, `cout`, `cerr`                               |
+| `fstream`   | file i/o              | `ifstream`, `ofstream`                              |
+| `sstream`   | string i/o            | `istringstream`, `ostringstream`                    |
 | `array`     | array class           | `array`                                             |
 | `vector`    | vector class          | `vector`                                            |
 | `list`      | linked list class     | `list`                                              |
