@@ -2,9 +2,9 @@
 
 This repository consists of 21 sections that go through the basics of C++. This is intended for those with basic programming knowledge in Python as they learn C++. Any references are provided but these programs and documents are my own. This content works best as supplementary material alongside a synchronous course in C++. Consult the Appendix for review and futher material.
 
-The early sections start by covering the basics of the language, before the later sections delve into two different programming paradigms. Functional and object-oriented programming are discussed in these later sections, but are best paired with a more theoretical understanding of the actual concepts. In other words, this repository focuses more on how these paradigms might be achived in C++, rather than what they are conceptually.
+The early sections start by covering the basics of the language, before the later sections delve into two different programming paradigms. Functional and object-oriented programming are discussed in these later sections, but are best paired with a more theoretical understanding of the actual concepts. In other words, this repository focuses more on how these paradigms might be achieved in C++, rather than what they are conceptually.
 
-A lot of this material works by virtue of examples. For more explicit definitions of these concepts, it is thought that a reference website (like cppreference.com) remains the best resource.
+A lot of this material works by virtue of examples. For more explicit definitions / specifications of these concepts, it is thought that a reference website (like cppreference.com) remains the best resource.
 
 ## Sections
 

@@ -1,6 +1,6 @@
 # Lambdas
 
-**Lambdas** are a method of defining functions like variables. They are similiar to function pointers in practice, but mirror the behavior of variables even more closely. They represent a major component of modern functional programming.
+**Lambdas** are a method of defining functions like variables. They are similar to function pointers in practice, but mirror the behavior of variables even more closely. They represent a major component of modern functional programming.
 
 ## Example
 
@@ -31,7 +31,7 @@ auto equals = [](unsigned int lhs, unsigned int rhs) { return lhs == rhs; };
 countEqual(array, size, value, equals); // counts the number of elements in the array that are equivalent to value
 ```
 
-Another example of an equivalence relation is [congruence mod m](https://en.wikipedia.org/wiki/Modular_arithmetic). The programmer can define this relation with a modular base (`m`) and a lambda expression. Since the expression relies on the (in scope) variable `m`, it must be **caputed** in the `[]` to be accessible within the lambda. It would also be possible to capture this by reference using `&m`. Furthermore, `=` can be used to capture all variables by value, and `&` alone can capture all variables by reference.
+Another example of an equivalence relation is [congruence mod m](https://en.wikipedia.org/wiki/Modular_arithmetic). The programmer can define this relation with a modular base (`m`) and a lambda expression. Since the expression relies on the (in scope) variable `m`, it must be **captured** in the `[]` to be accessible within the lambda. It would also be possible to capture this by reference using `&m`. Furthermore, `=` can be used to capture all variables by value, and `&` alone can capture all variables by reference.
 
 ```C++
 unsigned int m = 3;
