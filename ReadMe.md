@@ -16,28 +16,29 @@ A lot of this material works by virtue of examples. For more explicit definition
     - [03: Flow Control](03_Flow_Control/flow_control.md)
     - [04: Functions](04_Functions/functions.md)
     - [05: Structures](05_Structures/structures.md)
-    - [06: Templates](06_Templates/templates.md)
 - Debugging & Exceptions
-    - [07: Errors](07_Errors/errors.md)
-    - [08: Exceptions](08_Exceptions/exceptions.md)
-    - [09: Testing](09_Testing/testing.md)
-- Useful Classes
-    - [10: Strings](10_Strings/strings.md)
-    - [11: Streams](11_Streams/streams.md)
-    - [12: Vectors](12_Vectors/vectors.md)
+    - [06: Errors](06_Errors/errors.md)
+    - [07: Exceptions](07_Exceptions/exceptions.md)
+    - [08: Testing](08_Testing/testing.md)
 - Memory
-    - [13: Pointers](13_Pointers/pointers.md)
-    - [14: The Heap](14_The_Heap/heap.md)
-    - [15: Dynamic Arrays](15_Dynamic_Arrays/dynamic_arrays.md)
+    - [09: Pointers](09_Pointers/pointers.md)
+    - [10: The Heap](10_The_Heap/heap.md)
+    - [11: Dynamic Arrays](11_Dynamic_Arrays/dynamic_arrays.md)
 - Functional Programming
-    - [16: Function Pointers](16_Function_Pointers/function_pointers.md)
-    - [17: Lambdas](17_Lambdas/lambdas.md)
+    - [12: Function Templates](12_Templates/function_templates.md)
+    - [13: Function Pointers](13_Function_Pointers/function_pointers.md)
+    - [14: Lambdas](14_Lambdas/lambdas.md)
 - Object-oriented Programming
-    - [18: Classes](18_Classes/classes.md)
-    - [19: Inheritance](19_Inheritance/inheritance.md)
-    - [20: Rule of Three](20_Rule_of_Three/rule_of_three.md)
+    - [15: Classes](15_Classes/classes.md)
+    - [16: Class Templates](16_Templates/class_templates.md)
+    - [17: Inheritance](17_Inheritance/inheritance.md)
+    - [18: Rule of Three](18_Rule_of_Three/rule_of_three.md)
+- Useful Objects
+    - [19: Strings](19_Strings/strings.md)
+    - [20: Streams](20_Streams/streams.md)
+    - [21: Vectors](21_Vectors/vectors.md)
 - Abstract Data Types
-    - [21: Linked Lists](21_Linked_Lists/linked_lists.md)
+    - [22: Linked Lists](22_Linked_Lists/linked_lists.md)
 
 ## Appendix
 

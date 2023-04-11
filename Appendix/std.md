@@ -8,6 +8,9 @@ Below is a list of a few commonly used, and useful, header files.
 
 | header      | description           | useful components                                   |
 | ----------- | --------------------- | --------------------------------------------------- |
+| `iostream`  | standard i/o          | `cin`, `cout`, `cerr`                               |
+| `fstream`   | file i/o              | `ifstream`, `ofstream`                              |
+| `sstream`   | string i/o            | `istringstream`, `ostringstream`                    |
 | `memory`    | memory management     | `allocator`                                         |
 | `ctime`     | time information      | `ctime()`, `time_t`                                 |
 | `cmath`     | math operations       | `pow`, `sin()`, `sqrt()`, `abs()`                   |
@@ -16,9 +19,6 @@ Below is a list of a few commonly used, and useful, header files.
 | `stdexcept` | exception types       | `out_of_range`, `invalid_argument`, `runtime_error` |
 | `atomic`    | concurrency utilities | `atomic`                                            |
 | `thread`    | thread class          | `thread`                                            |
-| `iostream`  | standard i/o          | `cin`, `cout`, `cerr`                               |
-| `fstream`   | file i/o              | `ifstream`, `ofstream`                              |
-| `sstream`   | string i/o            | `istringstream`, `ostringstream`                    |
 | `array`     | array class           | `array`                                             |
 | `vector`    | vector class          | `vector`                                            |
 | `list`      | linked list class     | `list`                                              |
