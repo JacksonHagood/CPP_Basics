@@ -119,6 +119,10 @@ cout << number; // variables can be output to cout
 cin >> number; // reads data from cin into variable number
 ```
 
+## Language Components
+
+For a more detailed look at the components of C++, refer to the [keywords](https://en.cppreference.com/w/cpp/keyword) and [operators](https://en.cppreference.com/w/cpp/language/operator_precedence) lists. The compiler goes through [several stages](https://en.cppreference.com/w/cpp/language/translation_phases) when attempting to generate machine code. This repository will not focus much on these specifics.
+
 ## Example Program
 
 An example program is provided to demonstrate this material.
