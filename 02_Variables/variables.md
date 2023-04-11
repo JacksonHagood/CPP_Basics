@@ -32,7 +32,7 @@ const int num3 = 0;
 
 ## Types
 
-Variables in C++ are strongly typed, meaning variables have an associated type that cannot be changed. The language supports several primitive types in addition to user-defined data types (see [13: Classesp](../16_Classes/classes.md)).
+Variables in C++ are strongly typed, meaning variables have an associated type that cannot be changed. The language supports several primitive types in addition to user-defined objects (see [18: Classes](../18_Classes/classes.md)).
 
 ### Primitives
 
