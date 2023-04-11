@@ -1,6 +1,6 @@
 # Variables
 
-> Note: all the variables in this section are on the stack (static memory). [14: The Heap](../14_The_Heap/heap.md) discusses variables on the heap (dynamic memory).
+> Note: all the variables in this section are on the stack (static memory). [10: The Heap](../10_The_Heap/heap.md) discusses variables on the heap (dynamic memory).
 
 ## Creation
 
@@ -32,7 +32,7 @@ const int num3 = 0;
 
 ## Types
 
-Variables in C++ are strongly typed, meaning variables have an associated type that cannot be changed. The language supports several primitive types in addition to user-defined objects (see [18: Classes](../18_Classes/classes.md)).
+Variables in C++ are strongly typed, meaning variables have an associated type that cannot be changed. The language supports several primitive types in addition to user-defined objects (see [15: Classes](../15_Classes/classes.md)).
 
 ### Primitives
 

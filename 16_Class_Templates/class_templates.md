@@ -1,6 +1,6 @@
 # Class Templates
 
-Like functions, classes can be templated in C++. This allows for a class definition, that is written once, to be compatiable with multiple types. One commonly used example is the `vector` class.
+Like functions, classes can be templated in C++. This allows for a class definition, that is written once, to be compatible with multiple types. One commonly used example is the `vector` class.
 
 ## Example
 

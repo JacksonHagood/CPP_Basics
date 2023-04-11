@@ -14,7 +14,6 @@ class Pair {
         // getter / setter functions
         T getLeft() const { return left; }
         U getRight() const { return right; }
-
         void setLeft(const T LEFT) { left = LEFT; }
         void setRight(const U RIGHT) { right = RIGHT; }
 };
