@@ -43,7 +43,7 @@ An example program is provided to demonstrate this material.
 
 ### Usage
 - compile: `make`
-- run: `./templates.exe`
+- run: `./function_templates.exe`
 - cleanup: `make clean`
 
 ## Sources and Further Material

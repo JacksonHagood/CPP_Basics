@@ -51,8 +51,6 @@ Crucial to using C-strings is ensuring a null character is always present. Witho
 
 ## C++ Strings
 
-> Note: object-oriented programming is covered in Section 13: Classes.
-
 C++ strings are objects that closely mirror strings in Python. Unlike C-strings, the programmer is no longer in charge of maintaining the actual character array, and can instead use several member functions and operators. For example, to get the size of a string, one could use the `.size()` member function. As strings are objects, their member functions are called by giving the variable name followed by `.` and the function call. To use C++ style strings, they must first be included.
 
 ```C++

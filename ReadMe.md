@@ -25,12 +25,12 @@ A lot of this material works by virtue of examples. For more explicit definition
     - [10: The Heap](10_The_Heap/heap.md)
     - [11: Dynamic Arrays](11_Dynamic_Arrays/dynamic_arrays.md)
 - Functional Programming
-    - [12: Function Templates](12_Templates/function_templates.md)
+    - [12: Function Templates](12_Function_Templates/function_templates.md)
     - [13: Function Pointers](13_Function_Pointers/function_pointers.md)
     - [14: Lambdas](14_Lambdas/lambdas.md)
 - Object-oriented Programming
     - [15: Classes](15_Classes/classes.md)
-    - [16: Class Templates](16_Templates/class_templates.md)
+    - [16: Class Templates](16_Class_Templates/class_templates.md)
     - [17: Inheritance](17_Inheritance/inheritance.md)
     - [18: Rule of Three](18_Rule_of_Three/rule_of_three.md)
 - Useful Objects
