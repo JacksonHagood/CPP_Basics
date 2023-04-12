@@ -4,7 +4,7 @@ As programs grow in complexity, additional layers of abstraction can be useful. 
 
 ## Classes
 
-The single most important addition C++ adds to the C programming language is **classes**, the main method of object-oriented programming. Classes are containers for the programmer to consolidate data in the same place as operations on that data. These **objects** are useful as they allow the programmer to make instances that call these operations, reducing the complexity of many programs. An example class for addresses is given below.
+Perhaps the most important addition C++ adds to the C programming language is **classes**, the main method of object-oriented programming. Classes are containers for the programmer to consolidate data in the same place as operations on that data. These **objects** are useful as they allow the programmer to make instances that call these operations, reducing the complexity of many programs. An example class for addresses is given below.
 
 ```C++
 class Address {
