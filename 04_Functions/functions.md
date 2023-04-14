@@ -61,7 +61,7 @@ int main() {
 
 ### Pass by Pointer
 
-> Note: pointers are discussed more in Section 09: Pointers.
+> Note: pointers are discussed more in [09: Pointers](../09_Pointers/pointers.md).
 
 A final way to pass parameters is with **pass by pointer**. Pass by pointer is really just a special case of pass by value that leverages how pointers work to change a specific location in memory. In practice, this will produce the same results as pass by reference, but it does require the data type to be changed to a pointer. A side effect of arrays being pointers is that arrays are always passed by pointer (functions will change the original arrays).
 
