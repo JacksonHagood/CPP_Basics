@@ -11,7 +11,7 @@ Below is a list of a few commonly used, and useful, header files.
 | `iostream`  | standard i/o          | `cin`, `cout`, `cerr`                               |
 | `fstream`   | file i/o              | `ifstream`, `ofstream`                              |
 | `sstream`   | string i/o            | `istringstream`, `ostringstream`                    |
-| `memory`    | memory management     | `allocator`                                         |
+| `memory`    | memory management     | `unique_ptr`, `shared_ptr`                          |
 | `ctime`     | time information      | `ctime()`, `time_t`                                 |
 | `cmath`     | math operations       | `pow`, `sin()`, `sqrt()`, `abs()`                   |
 | `algorithm` | useful algorithms     | `swap()`, `count_if()`, `max()`                     |

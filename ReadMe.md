@@ -1,4 +1,4 @@
-# [C++ Basics](https://github.com/JacksonHagood/CPP_Basics) **Version 1.0**
+# [C++ Basics](https://github.com/JacksonHagood/CPP_Basics) **Version 1.1**
 
 This repository consists of 23 sections that go through the basics of C++. This is intended for those with basic programming knowledge in Python as they learn C++. Any references are provided but these programs and documents are my own. This content works best as supplementary material alongside a synchronous course in C++. Consult the Appendix for review and further material.
 
@@ -6,7 +6,7 @@ The early sections start by covering the basics of the language, before the late
 
 A lot of this material works by virtue of examples. For more explicit definitions / specifications of these concepts, it is thought that a reference website (like cppreference.com) remains the best resource.
 
-While the sections are arranged in roughly chronological order, some may find it useful to cover sections 19 - 21 earlier. Additionally, sections 12 - 14 could be skipped if the programmer intends to learn object-oriented programming exclusively.
+While the sections are arranged in roughly chronological order, some may find it useful to cover sections 19 - 22 earlier. Additionally, sections 12 - 14 could be skipped if the programmer intends to learn object-oriented programming exclusively.
 
 ## Sections
 
