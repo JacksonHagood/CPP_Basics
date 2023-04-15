@@ -20,7 +20,7 @@ Below is a list of a few commonly used, and useful, header files.
 | `atomic`    | concurrency utilities | `atomic`                                            |
 | `thread`    | thread class          | `thread`                                            |
 | `array`     | array class           | `array`                                             |
-| `vector`    | vector class          | `vector`                                            |
+| `vector`    | dynamic array class   | `vector`                                            |
 | `list`      | linked list class     | `list`                                              |
 | `set`       | set class             | `set`                                               |
 | `stack`     | stack class           | `stack`                                             |

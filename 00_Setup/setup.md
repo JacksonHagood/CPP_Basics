@@ -12,9 +12,11 @@ To better transition from Python to C++, it is important to understand the major
 
 It will soon become clear that C++ often takes "more code" to accomplish the same operation in Python. This is not an "inefficiency" or poor design. Python will often take the same steps as more lengthy C++ code, the only difference is the interpreter fills in these gaps and does a lot of the heavy lifting. In truth, it is Python that is often the more inefficient of the two. Furthermore, C++ has more flexibility in what the programmer can accomplish (and how errors can occur).
 
+C++ is unique in that it combines the freedom of a low-level language, like C, with high-level structures and capabilities of a language like Python. This means the programmer has a lot of choice in how they want to program and C++ can be (comparatively) fast. This repository focuses on a C-flavored C++, with an emphasis on memory management and simple pointers.
+
 ## Using a Compiler
 
-As previously stated, C++ code requires a compiler in order to be converted into an executable (machine code that the CPU can understand). **g++** will be used here thanks to its compatibility and memory error detection. Each program in this repository has a corresponding makefile, but it is still useful to understand how to manually compile. The below command can be used to compile a C++ program called main.
+As previously stated, C++ code requires a compiler in order to be converted into an executable (machine code that the CPU can understand). There is no single "official" C++ compiler. When choosing a compiler, it is important to ensure it conforms to the ISO C++ Standard. The [GNU Compiler](https://gcc.gnu.org/) (**g++**) will be used here thanks to its compatibility and memory error detection. Each program in this repository has a corresponding makefile, but it is still useful to understand how to manually compile. The below command can be used to compile a C++ program called main.
 
 ```
 g++ -std=c++17 -Wextra -Weffc++ -Wunused -pedantic -fsanitize=address,undefined -o main.exe main.cpp
@@ -26,7 +28,20 @@ g++ -std=c++17 -Wextra -Weffc++ -Wunused -pedantic -fsanitize=address,undefined 
 ./main.exe
 ```
 
-> Note: each module in this repository comes with a Makefile and instructions on commands to use it.
+### Installing `g++`
+
+`g++` can be installed in a Linux environment with the following command. If on Windows, WSL can be used to get a Linux shell.
+
+```
+sudo apt install build-essential
+```
+
+### Alternative Compilers
+
+- [Microsoft Visual](https://visualstudio.microsoft.com/vs/features/cplusplus/)
+- [Clang](https://clang.llvm.org/)
+- Xcode (OS X)
+- [Oracle C++](https://www.oracle.com/application-development/technologies/developerstudio.html)
 
 ## Hello World
 
