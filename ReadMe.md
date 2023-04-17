@@ -4,7 +4,7 @@ This repository consists of 23 sections that go through the basics of C++. This 
 
 The early sections start by covering the basics of the language, before the later sections delve into two different programming paradigms. Functional and object-oriented programming are discussed in these later sections, but are best paired with a more theoretical understanding of the actual concepts. In other words, this repository focuses more on how these paradigms might be achieved in C++, rather than what they are conceptually.
 
-A lot of this material works by virtue of examples. For more explicit definitions / specifications of these concepts, it is thought that a reference website (like cppreference.com) remains the best resource.
+A lot of this material works by virtue of examples. For more explicit definitions / specifications of these concepts, it is thought that a reference website (like [cppreference.com](https://en.cppreference.com/w/)) remains the best resource.
 
 While the sections are arranged in roughly chronological order, some may find it useful to cover sections 19 - 22 earlier. Additionally, sections 12 - 14 could be skipped if the programmer intends to learn object-oriented programming exclusively.
 
@@ -54,3 +54,7 @@ While the sections are arranged in roughly chronological order, some may find it
 ---
 
 ### By [Jackson Hagood](https://jacksonhagood.com/)
+
+TODO: iterators
+TODO: trees
+TODO: float specifics

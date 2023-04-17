@@ -46,17 +46,30 @@ int integer = 1;
 float floating = 0.1;
 ```
 
-### Size
+### Integers
 
-Each type in C++ has an associated size (in bytes) that cannot be altered. For example, a standard integer (`int`) takes up 4 bytes (32 bits) of memory. If the programmer wishes to have an integer with a different size, they can use the **short** and **long** keywords. For a 1 byte integer, the `char` type can be used as characters are represented as 1 byte numbers in ASCII. Depending on the operating system, the size of types can vary. To get around this, programmers can use integer types that specify their size in bits (such as `int32_t`). If the programmer wants an integer that can only be positive (or 0) they can use the **unsigned** keyword. To get the size of a type, the programmer can use the `sizeof()` function.
+Each type in C++ has an associated size (in bytes) that cannot be altered. For example, a standard integer (`int`) takes up 4 bytes (32 bits) of memory. If the programmer wishes to have an integer with a different size, they can use the **short** and **long** keywords. For a 1 byte integer, the `char` type can be used as characters are represented as 1 byte numbers in ASCII. Depending on the operating system, the size of types can vary (though the vast majority of modern systems follow the same format). To get around this, programmers can use integer types that specify their size in bits (such as `int32_t`). While these are really just typedef's to the base integer types, they can be more meaningful. To get the size of a type (in bytes), the programmer can use the `sizeof()` function.
 
 ```C++
-char num1; // 1 byte
-short num2; // 2 bytes
-int num3; // typically 4 bytes
-long num4; // typically 8 bytes
+char intChar; // 1 byte
+short intShort; // 2 bytes
+int intInt; // typically 4 bytes
+long intLong; // typically 8 bytes
+```
 
-unsigned int num5; // unsigned 4 byte integer
+```C++
+int8_t int8; // 1 byte
+int16_t int16; // 2 bytes
+int32_t int32; // 4 bytes
+int64_t int64; // 8 bytes
+```
+
+Integers contain a sign bit to keep track of whether the value is positive or negative. If the programmer wishes for their variable to be strictly non-negative, the **unsigned** keyword can be used (in front of an integer type). There are also typedef's for these such as `size_t`. The `signed` keyword can be used to explictly define an integer as signed, but the integer types default to this regardless.
+
+```C++
+unsigned int unsignedInt; // unsigned 4 byte integer
+u_int16_t unsignedInt8; // unsigned 2 byte integer
+size_t unsignedSizeT; // unsigned 8 byte integer
 ```
 
 ### Overflow

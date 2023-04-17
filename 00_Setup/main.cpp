@@ -1,5 +1,5 @@
 # include <iostream>
-using std::cout, std::cin;
+using std::cout;
 
 int main() {
     cout << "Hello World\n";

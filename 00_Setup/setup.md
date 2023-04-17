@@ -2,17 +2,17 @@
 
 ## What is C++?
 
-C++ is a popular programming language, typically used for application development. C++ is built on top of the C programming language, with its largest addition being object-oriented programming. C++ is a high-level, compiled language that retains some lower-level functionality (such as memory management). C++ is faster than many other high-level languages and is supported on many platforms.
+C++ is a popular programming language, typically used for application development. C++ was designed by [Bjarne Stroustrup](https://www.stroustrup.com/) on top of the C programming language, with perhaps its largest addition being object-oriented programming. C++ is a high-level, compiled language that retains some lower-level functionality (such as memory management) from C. C++ is faster than many other high-level languages and is widely supported on many platforms.
 
 ## Transitioning from Python to C++
 
-> Note: much of this section / repository assumes a background in Python or a similar language. Even if without a Python background, much of this information might be helpful.
+> Note: some of this section / repository assumes a background in Python or a similar language as a starting point.
 
 To better transition from Python to C++, it is important to understand the major differences between the languages. Python is an interpreted language, meaning a program called an interpreter converts each line of code to machine code one at a time during execution (runtime). C++, on the other hand, is a compiled language. A program called a **compiler** (like g++) converts an entire C++ program to machine code (compile-time) before runtime. Then, this machine code is run using an executable file. What this means in practice is that C++ is "lower-level" (closer to machine code) and typically faster (sometimes at the expense of memory). There are many differences in syntax between the languages as well.
 
 It will soon become clear that C++ often takes "more code" to accomplish the same operation in Python. This is not an "inefficiency" or poor design. Python will often take the same steps as more lengthy C++ code, the only difference is the interpreter fills in these gaps and does a lot of the heavy lifting. In truth, it is Python that is often the more inefficient of the two. Furthermore, C++ has more flexibility in what the programmer can accomplish (and how errors can occur).
 
-C++ is unique in that it combines the freedom of a low-level language, like C, with high-level structures and capabilities of a language like Python. This means the programmer has a lot of choice in how they want to program and C++ can be (comparatively) fast. This repository focuses on a C-flavored C++, with an emphasis on memory management and simple pointers.
+C++ is unique in that it combines the freedom of a low-level language, like C, with the high-level structures and capabilities of a language like Python. This means the programmer has a lot of choice in how they want to program and C++ can be (comparatively) fast. For example, the programmer can implement their own dynamic array by managing dynamic memory, or simply use a vector class. This repository focuses on a C-flavored C++, with an emphasis on memory management and pointers.
 
 ## Using a Compiler
 

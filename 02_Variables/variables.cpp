@@ -41,25 +41,30 @@ int main() {
         cout << "Floating Point: " << floating << '\n';
         cout << '\n';
 
-        char num1; // 1 byte
-        short num2; // 2 bytes
-        int num3; // typically 4 bytes
-        long num4; // typically 8 bytes
-
-        unsigned int num5; // unsigned 4 byte integer
+        char intChar; // 1 byte
+        short intShort; // 2 bytes
+        int intInt; // typically 4 bytes
+        long intLong; // typically 8 bytes
 
         // can use sizeof() to get the size (in bytes) of a variable
-        cout << "Size of char (bytes): " << sizeof(num1) << '\n';
-        cout << "Size of short (bytes): " << sizeof(num2) << '\n';
-        cout << "Size of int (bytes): " << sizeof(num3) << '\n';
-        cout << "Size of long (bytes): " << sizeof(num4) << '\n';
-        cout << "Size of unsigned int (bytes): " << sizeof(num5) << '\n';
-        cout << '\n';
+        cout << "Size of char (bytes): " << sizeof(intChar) << '\n';
+        cout << "Size of short (bytes): " << sizeof(intShort) << '\n';
+        cout << "Size of int (bytes): " << sizeof(intInt) << '\n';
+        cout << "Size of long (bytes): " << sizeof(intLong) << '\n';
+
+        int8_t int8; // 1 byte
+        int16_t int16; // 2 bytes
+        int32_t int32; // 4 bytes
+        int64_t int64; // 8 bytes
+
+        unsigned int unsignedInt; // unsigned 4 byte integer
+        u_int16_t unsignedInt8; // unsigned 2 byte integer
+        size_t unsignedSizeT; // unsigned 8 byte integer
 
         int min = INT32_MIN; // minimum integer value (-2147483648)
         int max = INT32_MAX; // maximum integer value (2147483647)
 
-        cout << "Minimum int: " << min << '\n';
+        cout << "\nMinimum int: " << min << '\n';
         cout << "Maximum int: " << max << '\n';
         cout << '\n';
 
