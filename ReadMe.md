@@ -55,6 +55,6 @@ While the sections are arranged in roughly chronological order, some may find it
 
 ### By [Jackson Hagood](https://jacksonhagood.com/)
 
-TODO: iterators
-TODO: trees
-TODO: float specifics
+- TODO: iterators
+- TODO: trees
+- TODO: float specifics
